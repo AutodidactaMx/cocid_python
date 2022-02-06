@@ -18,7 +18,8 @@ def cadena_entrada():
         verificar_opcion(opcion)
         print("#"*80)
         print("Has seleccionado",
-              config.CANCIONES[opcion], ". Te mostramos la letra a continuación:")
+              config.CANCIONES[opcion], ". Te mostramos la letra a \
+              continuación:")
         print("#"*80, end="\n\n")
     except ValueError:
         print("Debe elegir un numero una opcion numerica")
@@ -45,7 +46,8 @@ def mostrar_cancion(opcion):
 
 def presentacion():
     print("#"*80)
-    print("Bienvenido, por favor, selecciona una canción de este top de 4 canciones ".center(80))
+    print("Bienvenido, por favor, selecciona una canción de este top \
+          de 4 canciones ".center(80))
     print("#"*80, end="\n\n")
 
 
