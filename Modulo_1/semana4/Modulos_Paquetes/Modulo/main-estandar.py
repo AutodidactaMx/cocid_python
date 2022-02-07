@@ -5,4 +5,3 @@ sys.ps2
 '... '
 sys.ps1 = 'C> '
 print('Yuck!')
-

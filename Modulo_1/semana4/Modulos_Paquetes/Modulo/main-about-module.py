@@ -1,2 +1,3 @@
-from fibo import fib, fib2
+
+from fibo import fib
 fib(500)
