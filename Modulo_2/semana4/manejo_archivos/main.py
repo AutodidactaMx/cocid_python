@@ -7,6 +7,7 @@ try:
         os.path.abspath("Modulo_2/semana4/base_datos/edades.txt"))
     ma.crear_archivo_datos_aleatorios(5)
     ma.agregar_archivo_datos_aleatorios(5)
+    
     conjunto_datos = ma.extraer_datos_archivo()
     edades_df = Distribucion_Frecuencia(datos_agrupados=conjunto_datos)
     tablas_df = edades_df.calculo()

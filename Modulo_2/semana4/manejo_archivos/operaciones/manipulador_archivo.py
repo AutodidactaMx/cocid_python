@@ -6,10 +6,10 @@ class ManipuladorArchivo():
 
     def __init__(self, ruta_archivo: str) -> None:
         self.ruta_archivo = ruta_archivo
-        pass
 
     def crear_archivo_datos_aleatorios(self, cantidad: int) -> None:
-        """Crear archivo con datos aleatorios. En caso de que exista el archivo se sobre escribira."""
+        """Crear archivo con datos aleatorios. En caso de que exista
+        el archivo se sobre escribira."""
         random_numbers = [random.randint(1, 100) for edad in range(cantidad)]
         archivo = open(self.ruta_archivo, "w+")
         for index, numero in enumerate(random_numbers, start=1):
@@ -19,7 +19,8 @@ class ManipuladorArchivo():
         archivo.close()
 
     def agregar_archivo_datos_aleatorios(self, cantidad: int) -> None:
-        """Agrega al archivo datos aleatorios. En caso de que no exista el archivo se crea."""
+        """Agrega al archivo datos aleatorios. En caso de que 
+        no exista el archivo se crea."""
         random_numbers = [random.randint(1, 100) for edad in range(cantidad)]
         archivo = open(self.ruta_archivo, "a+")
         if(self.tiene_dato()):
