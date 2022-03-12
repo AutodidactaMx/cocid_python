@@ -32,3 +32,24 @@ class RepositorioPersona (RepositorioConexion):
             self.cerrar_conexion()
 
         return registros_afectado
+
+    def consultar(self) -> list:
+        personas: list = []
+        try:
+            super().conetarse()
+            cursor = self.connection.cursor()
+
+            sql_select_query = "select * from prowebco_cocid.tb_persona"
+            cursor = self.connection.cursor(dictionary=True)
+            cursor.execute(sql_select_query)            
+            records = cursor.fetchall()
+            for row in records:
+                persona = Persona().asignar(curp=row["curp"], nombre=row["nombre"],
+                                  edad=row["edad"], correo=row["correo"], telefono=row["telefono"])
+                personas.append(persona)
+
+        except mysql.connector.Error as error:
+            print(f"Fallo la insercion {error}")
+        finally:
+            self.cerrar_conexion()
+        return personas
