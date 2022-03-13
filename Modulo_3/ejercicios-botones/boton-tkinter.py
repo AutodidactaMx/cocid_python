@@ -1,13 +1,15 @@
-from tkinter import *
+import tkinter
 from tkinter import ttk
 
-window = Tk()
-window.title("Botón en Tk")
-window.geometry('400x200')
-#Forma Tradicional
-botonOriginal = Button(window, text="¡Botón Original!")
-#Forma Tematica
-botonTematico = ttk.Button(text="¡Botón Tematico!")
-Button(window, text="¡Botón Original!")
-botonTematico.place(x=100, y=100)
-window.mainloop()
+master=tkinter.Tk()
+master.title("Botón en Tk")
+master.geometry("450x350")
+
+button1=ttk.Button(master, text="button1")
+button1.place(x=100, y=100)
+
+button2=tkinter.Button(master, text="button2")
+button2.place(x=100, y=25)
+
+
+master.mainloop()

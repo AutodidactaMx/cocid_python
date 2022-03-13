@@ -20,5 +20,8 @@ style.configure(
 boton = Button(text="¡Hola, mundo!", style="MyButton.TButton")
 boton.place(x=50, y=50)
 
+boton2 = Button(root,text="¡Hola, mundo2!", style="MyButton.TButton")
+boton2.place(x=100, y=100)
+
 # Execute Tkinter
 root.mainloop()
