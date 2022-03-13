@@ -1,5 +1,5 @@
 import mysql.connector
-
+from persistencia.env import HOST,DATABASE,USER,PASSWORD
 
 class RepositorioConexion:
     connection: any
@@ -9,10 +9,10 @@ class RepositorioConexion:
 
     def conetarse(self):
         try:
-            self.connection = mysql.connector.connect(host='proweb-corp.com',
-                                                 database='prowebco_cocid',
-                                                 user='prowebco_alumnos_cocid',
-                                                 password='qpF5n,QDotkU')
+            self.connection = mysql.connector.connect(host=HOST,
+                                                 database=DATABASE,
+                                                 user=USER,
+                                                 password=PASSWORD)
         except mysql.connector.Error as e:
             print("Error al leer los datos de la tabla MySQL", e)
 
