@@ -15,7 +15,7 @@ root = tk.Tk()
 tree=ttk.Treeview(root)
 #Definimos las columnas
 tree["columns"]=("uno","dos","tres")
-tree.column("#0", width=270, minwidth=270, stretch=tk.NO)
+tree.column("#0", width=0, minwidth=270, stretch=tk.NO)
 tree.column("uno", width=150, minwidth=150, stretch=tk.NO)
 tree.column("dos", width=400, minwidth=200)
 tree.column("tres", width=80, minwidth=50, stretch=tk.NO)
@@ -29,6 +29,7 @@ tree.pack(side=tk.TOP)
 
 #Insertar fila
 tree.insert('', tk.END, values=["Fila uno","Fila dos"," Fila tres"])
+tree.insert('', tk.END, values=["Fila2 uno","Fila2 dos"," Fila2 tres"])
 tree.bind('<<TreeviewSelect>>', item_selected)
 
 

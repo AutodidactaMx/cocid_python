@@ -8,7 +8,7 @@ ventana.config(bg='#C2C2C2')
 
 
 def redimensionar_func():
-    image = Image.open("./logo.png")
+    image = Image.open("./imagenes/logo.png")
     w = int(width.get())
     h = int(height.get())
     resize_img = image.resize((w, h))

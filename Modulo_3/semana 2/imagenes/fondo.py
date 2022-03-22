@@ -4,7 +4,7 @@ from PIL import ImageTk, Image
 ventana = Tk()
 ventana.title('PythonGuides')
 ventana.geometry("400x400")
-img = Image.open("color.jpg")
+img = Image.open("./imagenes/python.jpg")
 
 
 bg = ImageTk.PhotoImage(img)
