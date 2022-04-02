@@ -34,13 +34,13 @@ class FormSnake():
     def cruzar_snake(self):
         self.canvas.delete(ALL)
         self.canvas.create_text(self.canvas.winfo_width() / 2, self.canvas.winfo_height() / 2, 
-            text=f"Intentelo\n de Nuevo \n\n 🍎",fill='red',
+            text=f"Perdiste 🍎",fill='red',
             font=('Arial',20,'bold'))
 
     def maximo_nivel(self):
         self.canvas.delete(ALL)
         self.canvas.create_text(self.canvas.winfo_width() / 2, self.canvas.winfo_height() / 2, 
-            text=f"EXELENTE\n\n °° FIN °° \n\n 🍎🍎🍎",fill='green2',
+            text=f"GANADOR 🍎🍎🍎",fill='green',
             font=('Arial',35,'bold'))
 
     
