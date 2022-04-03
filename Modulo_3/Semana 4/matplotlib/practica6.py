@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 
 data = {
-            'Perro': 87,
-            'Gato': 333,
-            'Pajaro': 98,
-            'Pez': 22,
-            'Reptil': 100
+            'Morelos': 10,
+            'Zacatecas': 50,
+            'Hidalgo': 10,
+            'Guerrero': 20,
+            'Veracruz': 10
         }
 clave = data.keys()
 valor = data.values()
@@ -19,10 +19,10 @@ lienzo_figura = FigureCanvasTkAgg(figura, ventana)
 lienzo_figura.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH)
 
 ax1 = figura.add_subplot()
-ax1.set_title('Que clase de ,mascota tienes?')
-ax1.bar(clave, valor)
-ax1.set_ylabel('Cantidades')
-ax1.set_xlabel('Animales')
+ax1.set_title('Recepcion de turistas')
+ax1.pie(x=list(valor),labels=list(clave))
+ax1.set_ylabel('Ventas')
+ax1.set_xlabel('temperatura')
 
 toolbar =NavigationToolbar2Tk(lienzo_figura, ventana)
 toolbar.update()

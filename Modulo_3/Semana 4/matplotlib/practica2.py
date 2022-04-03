@@ -1,52 +1,30 @@
 import tkinter as tk
-import matplotlib
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 
-matplotlib.use('TkAgg')
-
-from matplotlib.figure import Figure
-from matplotlib.backends.backend_tkagg import (
-    FigureCanvasTkAgg,
-    NavigationToolbar2Tk
-)
-
-
-class App(tk.Tk):
-    def __init__(self):
-        super().__init__()
-
-        self.title('Tkinter Matplotlib Demo')
-
-        # prepare data
-        data = {
-            'Python': 11.27,
-            'C': 11.16,
-            'Java': 10.46,
-            'C++': 7.5,
-            'C#': 5.26
+data = {
+            '0-9': 5000,
+            '10-19': 2000,
+            '20-29': 30000,
+            '30-39': 43490,
+            '40-49': 39898
         }
-        languages = data.keys()
-        popularity = data.values()
+clave = data.keys()
+valor = data.values()
 
-        # create a figure
-        figure = Figure(figsize=(6, 4), dpi=100)
+ventana= tk.Tk() 
+  
+figura = plt.Figure(figsize=(6,5), dpi=100)
+lienzo_figura = FigureCanvasTkAgg(figura, ventana)
+lienzo_figura.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH)
 
-        # create FigureCanvasTkAgg object
-        figure_canvas = FigureCanvasTkAgg(figure, self)
+ax1 = figura.add_subplot()
+ax1.set_title('Habitantes')
+ax1.barh(list(clave), list(valor))
+ax1.set_ylabel('Rango de edad')
+ax1.set_xlabel('Cantidad')
 
-        # create the toolbar
-        NavigationToolbar2Tk(figure_canvas, self)
-
-        # create axes
-        axes = figure.add_subplot()
-
-        # create the barchart
-        axes.bar(languages, popularity)
-        axes.set_title('Top 5 Programming Languages')
-        axes.set_ylabel('Popularity')
-
-        figure_canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
-
-
-if __name__ == '__main__':
-    app = App()
-    app.mainloop()
+toolbar =NavigationToolbar2Tk(lienzo_figura, ventana)
+toolbar.update()
+toolbar.pack(side=tk.BOTTOM, fill=tk.Y)
+ventana.mainloop()
