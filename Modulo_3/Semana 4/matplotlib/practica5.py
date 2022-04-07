@@ -6,8 +6,8 @@ data = {
             '$700': 22,
             '$600': 33,
             '$500': 12,
-            '$400': 321,
-            '$300': 444
+            '$400': 32,
+            '$300': 44
         }
 clave = data.keys()
 valor = data.values()
@@ -20,7 +20,7 @@ lienzo_figura.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH)
 
 ax1 = figura.add_subplot()
 ax1.set_title('Dispersion')
-ax1.scatter(clave, valor)
+ax1.scatter(valor,clave)
 ax1.set_ylabel('Ventas')
 ax1.set_xlabel('temperatura')
 

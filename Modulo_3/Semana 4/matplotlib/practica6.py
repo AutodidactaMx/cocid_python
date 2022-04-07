@@ -21,8 +21,7 @@ lienzo_figura.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH)
 ax1 = figura.add_subplot()
 ax1.set_title('Recepcion de turistas')
 ax1.pie(x=list(valor),labels=list(clave))
-ax1.set_ylabel('Ventas')
-ax1.set_xlabel('temperatura')
+
 
 toolbar =NavigationToolbar2Tk(lienzo_figura, ventana)
 toolbar.update()

@@ -7,7 +7,7 @@ data = {
             'Febrero': 23400,
             'Marzo': 303400,
             'Abril': 432290,
-            'Marzo': 39838
+            'Mayo': 39838
         }
 clave = data.keys()
 valor = data.values()
