@@ -27,7 +27,7 @@ class RepositorioPersona (RepositorioConexionORMSQLite):
             super().conetarse()
             with Session(self.engine) as session:            
                 session.add(persona)
-                session.commit()
+                session.commit() 
 
         except Exception as error:
             registros_afectado = 0
