@@ -1,15 +1,15 @@
-from persistencia.ventas_reporsitorio import Vemtas_Repositorio
+from persistencia.ventas_reporsitorio import Ventas_Repositorio
 from datetime import datetime, timedelta
 import util.generic as utl
 import util.constant as const
+
 class Mediciones:    
     
     def obtener_ventas_dia(self): 
-        return Vemtas_Repositorio().obtener_ventas_por_dia()        
-    
+        return Ventas_Repositorio().obtener_ventas_por_dia()        
     
     def obtener_total_columna(self, columna):
-        vr  = Vemtas_Repositorio().obtener_total_columna(columna)
+        vr  = Ventas_Repositorio().obtener_total_columna(columna)
         values = []           
         key = vr["unique_keys"]
         tota_row = vr["total_row"]
@@ -30,8 +30,7 @@ class Mediciones:
         return self.obtener_total_columna(const.GENERO)            
     
     def obtener_total_ciudades(self):
-        return self.obtener_total_columna(const.CIUDADES)
+        return self.obtener_total_columna(const.CIUDADES)            
     
     def obtener_total_tipo_cliente(self):
-        return self.obtener_total_columna(const.TIPO_CLIENTE)
-        
+        return self.obtener_total_columna(const.TIPO_CLIENTE)            

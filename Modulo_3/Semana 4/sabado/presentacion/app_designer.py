@@ -4,20 +4,22 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 class AppDesigner(tk.Tk):
+    
     frame_zone_bottom = None
     frame_zone_top = None
     frame_zone_bottom_left = None
     frame_zone_bottom_rigth = None
     
     def __init__(self): 
-        super().__init__()        
-            
+        super().__init__()       
+        
     def config_window(self):
         self.title('Master panel')        
         w, h = 1024,900                                                                     
         self.geometry("%dx%d+0+0" % (w, h))
         self.config(bg='#3a7ff6')            
-        utl.centrar_ventana(self,w,h)           
+        utl.centrar_ventana(self,w,h) 
+    
     def frameZoneTop(self):
         self.frame_zone_top = tk.Frame(self, bd=1, height=500, relief=tk.SOLID, bg='white')
         self.frame_zone_top.pack(side="top",fill=tk.X)
@@ -50,7 +52,6 @@ class AppDesigner(tk.Tk):
         self.canvas_figure_gender = FigureCanvasTkAgg(self.figure_gender, self.frame_zone_bottom_left)
         self.canvas_figure_gender.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, ipadx=5, ipady=10)
 
-                
     def initialize_component(self):                
         self.config_window()
         self.frameZoneTop()

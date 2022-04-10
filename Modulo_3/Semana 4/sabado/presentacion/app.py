@@ -2,13 +2,13 @@ import tkinter as tk
 from matplotlib.backends.backend_tkagg import NavigationToolbar2Tk
 from controlador.mediciones_controlador import Mediciones
 from presentacion.app_designer import AppDesigner
-       
+
 class App(AppDesigner):       
-                          
-    def __init__(self):        
+    
+    def __init__(self):  
         super().__init__()
         self.initialize_component()  
-        self.load_graphic_plot()
+        self.load_graphic_plot()        
         self.load_graphic_bar()
         self.load_graphic_pie()
         
@@ -18,8 +18,7 @@ class App(AppDesigner):
         ax1.set_title('Ventas por dia')
         ax1.plot_date(med["key"], med["values"],linestyle='solid', color='g')
         ax1.set_ylabel('Ventas')
-        ax1.set_xlabel('Dias')        
-        #ax1.set_xticklabels(med["key"], rotation=30, fontdict={'horizontalalignment': 'center'})
+        ax1.set_xlabel('Dias')                
         toolbar =NavigationToolbar2Tk(self.canvas_figure_plot , self.frame_zone_top)
         toolbar.update()
         toolbar.pack(side=tk.BOTTOM, fill=tk.Y)
@@ -45,4 +44,3 @@ class App(AppDesigner):
         toolbar.pack(side=tk.BOTTOM, fill=tk.Y)
         
         
-              
