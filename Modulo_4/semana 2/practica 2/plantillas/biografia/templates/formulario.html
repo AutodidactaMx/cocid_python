@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br />
+{% if contexto.estado == 'success' %}
+<div class="alert alert-success" role="alert">
+    La informacion es es correcta
+</div>
+{% endif %}
+<h1>Formulario</h1>
+<form method="post" class="mt-1 row g-3 needs-validation" novalidate>
+    {% csrf_token %}
+    <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nombre</label>
+        <input class="form-control {% if form.nombre.errors%} is-invalid{% endif%}" type="text" name="nombre"
+            placeholder="nombre">
+        <div class="invalid-feedback">
+            {% for error in form.nombre.errors %} {{error}} {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellidos</label>
+        <input class="form-control {% if form.apellido.errors%} is-invalid{% endif%}" type="text" name="apellido"
+            placeholder="apellido">
+        <div class="invalid-feedback">
+            {% for error in form.apellido.errors %} {{error}} {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Usuario</label>
+        <div class="input-group has-validation">
+            <input class="form-control {% if form.usuario.errors%} is-invalid{% endif%}" type="text" name="usuario"
+                placeholder="usuario">
+            <div class="invalid-feedback">
+                {% for error in form.usuario.errors %} {{error}} {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">Ciudad</label>
+        <input class="form-control {% if form.ciudad.errors%} is-invalid{% endif%}" type="text" name="ciudad" ,
+            placeholder="ciudad">
+        <div class="invalid-feedback">
+            {% for error in form.ciudad.errors %} {{error}} {% endfor %}
+        </div>
+    </div>
+
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+</form>
+{% endblock %}
