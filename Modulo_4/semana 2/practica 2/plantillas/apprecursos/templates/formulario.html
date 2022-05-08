@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 <br />
 {% if contexto.estado == 'success' %}
@@ -8,7 +7,7 @@
 </div>
 {% endif %}
 <h1>Formulario</h1>
-<form method="post" class="mt-1 row g-3 needs-validation" novalidate>
+<form method="post">
     {% csrf_token %}
     <div class="col-md-4">
         <label for="validationCustom01" class="form-label">Nombre</label>
