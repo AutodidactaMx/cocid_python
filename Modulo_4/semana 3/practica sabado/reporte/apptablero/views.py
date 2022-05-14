@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Ventas
-from django.db.models import Count, Sum
+from django.db.models import Sum
 from datetime import datetime
 
 def content_date_time_column_chart():
@@ -13,7 +13,6 @@ def content_date_time_column_chart():
         'labels': labels,
         'data': data,
     }
-
 
 def content_total_filter_chart(column_filter, column_sum):
     labels, data = [], []
@@ -29,14 +28,10 @@ def content_total_filter_chart(column_filter, column_sum):
 
 
 def tablero(request):
-
     context = {
         "pie_city": content_total_filter_chart(column_filter="ciudad", column_sum="total"),
         "dought_gender": content_total_filter_chart(column_filter="genero", column_sum="total"),
         "bar_pay": content_total_filter_chart(column_filter="pago", column_sum="total"),
         "line_pay" : content_date_time_column_chart()
-
-
     }
-
-    return render(request, 'tablero.html', context)
+    return render(request, 'tablero.html',context)
