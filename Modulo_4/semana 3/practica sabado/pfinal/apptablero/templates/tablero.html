@@ -1,0 +1,186 @@
+{% extends "content.html" %}
+{% block content %}
+{% load static %}
+<div class="row mt-2">    
+    <div class="col-12 text-center">
+        <h1 class="titulo">Tablero de información</h1>        
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <canvas id="myChartLine" height="20vh" width="80vw"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <canvas id="myChartPie"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+
+            <div class="card-body">
+                <canvas id="myChartBar"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <canvas id="myChartDougth"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block scriptcontent %}
+
+<script>
+    const labels = {{ pie_city.labels| safe }}
+    const data_pie = {{ pie_city.data| safe }}
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Totales por ciudades',
+            backgroundColor: ['#3498db', '#2ecc71', '#1abc9c', '#34495e'],
+            data: data_pie,
+        }]
+    };
+
+    const configPie = {
+        type: 'pie',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Ciudades totales'
+                }
+            }
+        },
+    };
+</script>
+<script>
+    const labelsDought = {{ dought_gender.labels| safe }}
+    const dataDought = {{ dought_gender.data| safe }}
+
+    const dataD = {
+        labels: labelsDought,
+        datasets: [{
+            label: 'Totales por ciudades',
+            backgroundColor: ['#3498db', '#2ecc71', '#1abc9c', '#34495e'],
+            data: dataDought,
+        }]
+    };
+
+    const configDought = {
+        type: 'doughnut',
+        data: dataD,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Ciudades totales'
+                }
+            }
+        },
+    };
+</script>
+<script>
+    const labelsBar = {{ bar_pay.labels| safe }}
+    const dataBar = {{ bar_pay.data| safe }}
+
+    const dataPay = {
+        labels: labelsBar,
+        datasets: [{
+            label: 'Totales por Pagos',
+            backgroundColor: ['#3498db', '#2ecc71', '#1abc9c', '#34495e'],
+            data: dataBar,
+        }]
+    };
+
+    const configBar = {
+        type: 'bar',
+        data: dataPay,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Chart.js Bar Chart'
+                }
+            }
+        },
+    };
+</script>
+<script>
+    const labelsLine = {{ line_pay.labels| safe }}
+    const dataLine = {{ line_pay.data| safe }}
+
+    const dataPayLine = {
+        labels: labelsLine,
+        datasets: [{
+            label: 'Totales',
+            data: dataLine,
+            borderColor: '#34495e',
+            backgroundColor: '#34495e',
+        }]
+    };
+
+    const configLine = {
+        type: 'line',
+        data: dataPayLine,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: ''
+                }
+            }
+        },
+    };
+</script>
+<script>
+    const myChartPie = new Chart(
+        document.getElementById('myChartPie'),
+        configPie
+    );
+    const myChartDougth = new Chart(
+        document.getElementById('myChartDougth'),
+        configDought
+    );
+    const myChartBar = new Chart(
+        document.getElementById('myChartBar'),
+        configBar
+    );
+    const myChartLine = new Chart(
+        document.getElementById('myChartLine'),
+        configLine
+    );
+</script>
+
+{% endblock %}
