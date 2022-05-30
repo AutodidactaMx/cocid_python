@@ -1,5 +1,6 @@
 '''
 Unid dataframe par aunificar nuestros paquetes de informacion 
+concatenando numpy dataframe
 '''
 import pandas as pd
 import numpy as np

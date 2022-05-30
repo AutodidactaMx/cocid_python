@@ -1,5 +1,6 @@
 '''
-Pandas cuenta con una gran funcionalidad a la hora de interactuar con texto, es super versatil si estas interesado en crear modelos de análisis de lenguaje natural.
+Pandas cuenta con una gran funcionalidad a la hora de interactuar con texto, 
+es super versatil si estas interesado en crear modelos de análisis de lenguaje natural.
 
 Comencemos cargando nuestra librería y creando un diccionario con nombres de personas.
 '''
