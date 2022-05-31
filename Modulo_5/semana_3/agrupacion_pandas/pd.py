@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+df = pd.read_csv('poblacion.csv')
 pd.options.display.float_format = '{:,.1f}'.format
 df = pd.read_csv('poblacion.csv')
 df['year'] = pd.Categorical(df['year'].apply(str))

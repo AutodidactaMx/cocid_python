@@ -1,17 +1,20 @@
-'''Es muy usual que los registros de una base de datos aparezcan más de una vez, 
-así que veamos cómo pandas puede ayudarnos a lidiar con estos casos. Para comenzar, importemos pandas y
-creemos un DataFrame con dos columnas y algunos datos repetidos.'''
 import pandas as pd
 import numpy as np
 
+'''
+Para comenzar, importemos pandas y
+creemos un DataFrame con dos columnas y algunos datos repetidos
+'''
 df = pd.DataFrame({'a': ['w'] * 4 + ['x'] * 3 + ['y'] * 2 + ['z']+['v'], 
                    'b': [1, 1, 1, 1, 2, 2, 2, 3, 3, 4,5]})
 print(df)
 '''Para encontrar los registros duplicados usamos duplicated , 
 que marca con True aquellos casos de filas duplicadas:'''
+print('-'*100)
 print(df.duplicated())
 '''Podemos usar keep='first' para marcar solo la primera ocurrencia
 o keep='last' para marcar la última:'''
+print('-'*100)
 print(df.duplicated(keep='first'))
 print(df.duplicated(keep='last'))
 '''Identificados los casos duplicados, podemos usar este 
@@ -26,12 +29,12 @@ print('-'*100)
 print(df.duplicated(keep=False))
 print('-'*100)
 print(df[df.duplicated(keep=False)])
-'''Por último, puedes usar el comando 'drop_duplicates' para eliminar los duplicados.
-Por defecto, la función guarda el primer resultado keep='first':'''
-print('-'*100)
-print(df.drop_duplicates())
-'''Y si quieres solo borrar duplicados teniendo en 
+'''Borrar duplicados teniendo en 
 cuenta una sola columna, lo puedes hacer mediante una lista nombrando las columnas donde vas a eliminar los duplicados, en este caso, ['a']:
 '''
 print('-'*100)
-print(df.drop_duplicates(['a'],keep='last'))
+print(df.duplicated(['a'],keep='last'))
+'''Puedes usar el comando 'drop_duplicates' para eliminar los duplicados.
+Por defecto, la función guarda el primer resultado keep='first':'''
+print('-'*100)
+print(df.drop_duplicates())
