@@ -12,7 +12,7 @@ import tkinter as tk
 from pandastable import Table, TableModel
 
 '''Cargamos la data'''
-df = pd.read_csv('bienes_raices.csv')
+df = pd.read_csv('./semana_3/sabado/bienes_raices.csv')
 '''
 Limpiamos datos con espacio vacios y elimnamos todo
 valor en nulo

@@ -29,7 +29,7 @@ import sidetable
 '''
 Carga de el archivo de datos
 '''
-df = pd.read_csv('bienes_raices.csv')
+df = pd.read_csv('./semana_3/sabado/bienes_raices.csv')
 '''
 Apoyamos del paquete sidetable para usar el metodo
 stb para poder tener la tabla de ddistribucion de frecuencia
