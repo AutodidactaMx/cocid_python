@@ -1,0 +1,5 @@
+# Declaracion de constantes.
+SNEAKER_URBANO = 1200
+BOTA_OUTDOOR  = 1340
+PRODUCTO = 20
+DESCUENTO = 0.10
