@@ -10,7 +10,7 @@ long_description = (
 
 setup(
     name="color_terminal_glj",
-    version="2.2.34",
+    version="2.2.38",
     description="Paquete ayuda cambio de colores de texto de terminal",
     long_description=long_description,
     url="https://github.com/AutodidactaMx/cocid_python",        
