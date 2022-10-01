@@ -1,4 +1,5 @@
 from math import sqrt
+from operaciones.df import DF
 
 
 class Distribucion_Frecuencia:
@@ -35,37 +36,22 @@ class Distribucion_Frecuencia:
         x_inicial = self.__minimo
         Fi = 0
         Fr = 0
-        lista_x = []
-        lista_xi = []
-        lista_fi = []
-        Lista_Fi = []
-        lista_fr = []
-        lista_Fr = []
+        dfs = []
         for intervalo in range(self.__intervalo):
-            lista_x.append(self.calculo_x(
-                valor=x_inicial, amplitud=self.__amplitud))
-            lista_xi.append(self.calculo_xi(
-                valor=x_inicial, amplitud=self.__amplitud))
             fi = self.calculo_fi(rango_ini=x_inicial,
                                  rango_final=(x_inicial+self.__amplitud),
                                  coleccion_numeros=self.__datos_agrupados)
-            lista_fi.append(fi)
             Fi += fi
-            Lista_Fi.append(Fi)
             fr = self.calculo_fr(fi=fi, n=self.__n)
-            lista_fr.append(fr)
-            Fr += fr
-            lista_Fr.append(Fr)
+            Fr += fr            
+            dfs.append(DF(valor_x=self.calculo_x(
+                valor=x_inicial, amplitud=self.__amplitud),
+                xi=self.calculo_xi(
+                valor=x_inicial, amplitud=self.__amplitud),
+                fi=fi, Fi=Fi, fr=fr, Fr=Fr))
             x_inicial += self.__amplitud
 
-        return {
-            "valor_x": lista_x,
-            "xi": lista_xi,
-            "fi":  lista_fi,
-            "Fi": Lista_Fi,
-            "fr": lista_fr,
-            "Fr": lista_Fr
-        }
+        return dfs
 
     def valores_calculo(self) -> None:
         '''Calculos iniciales
@@ -93,26 +79,10 @@ class Distribucion_Frecuencia:
         for numero in coleccion_numeros:
             if (maximo == numero and (rango_ini <= numero <= rango_final)):
                 contador += 1
-            elif(rango_ini <= numero < rango_final):
+            elif (rango_ini <= numero < rango_final):
                 contador += 1
         return contador
 
     def calculo_fr(self, fi: float, n: int):
         '''Frecuencia relativa'''
-        return fi / n
-
-    def mostrar_tablas(self, tablas_df: dict) -> None:
-        """Imprime en pantalla la tabla de distribuciones de frecuencias"""
-        print("x".rjust(15, ' '),
-              "xi".rjust(15, ' '),
-              "fi".rjust(15, ' '),
-              "Fi".rjust(15, ' '),
-              "fr".rjust(15, ' '),
-              "Fr".rjust(15, ' '))
-        for vector in range(self.__intervalo):
-            print(str(tablas_df['valor_x'][vector]).rjust(15, ' '),
-                  str(tablas_df['xi'][vector]).rjust(15, ' '),
-                  str(tablas_df['fi'][vector]).rjust(15, ' '),
-                  str(tablas_df['Fi'][vector]).rjust(15, ' '),
-                  str(tablas_df['fr'][vector]).rjust(15, ' '),
-                  str(tablas_df['Fr'][vector]).rjust(15, ' '))
+        return fi / n   
