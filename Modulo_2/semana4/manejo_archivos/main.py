@@ -3,8 +3,7 @@ from operaciones.distribucion_frecuencia import Distribucion_Frecuencia
 from operaciones.manipulador_archivo import ManipuladorArchivo
 
 try:
-    ma = ManipuladorArchivo(
-        os.path.abspath("Modulo_2/semana4/base_datos/edades.txt"))
+    ma = ManipuladorArchivo("./base_datos/edades.txt")
     ma.crear_archivo_datos_aleatorios(5)
     ma.agregar_archivo_datos_aleatorios(5)
     
