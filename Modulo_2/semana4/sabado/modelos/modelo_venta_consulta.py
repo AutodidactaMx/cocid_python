@@ -16,3 +16,12 @@ class VentaTienda:
     def __repr__(self):
         return f'VentaDepartamento("{self.tienda},  {self.ventas}")\n'    
     
+    
+class VentaAnio:
+    def __init__(self,anio, ventas) -> None:
+        self.anio = anio        
+        self.ventas = ventas        
+        
+    def __repr__(self):
+        return f'VentaDepartamento("{self.anio},  {self.ventas}")\n'    
+    

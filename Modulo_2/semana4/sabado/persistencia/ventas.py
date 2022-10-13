@@ -1,6 +1,6 @@
 import mysql.connector
 from persistencia.conexion_bd import ConexionBD
-from modelos.modelo_venta_consulta import VentaDepartamento, VentaTienda
+from modelos.modelo_venta_consulta import VentaDepartamento, VentaTienda, VentaAnio
 
 
 class VentasPersistencia (ConexionBD):
@@ -70,6 +70,32 @@ class VentasPersistencia (ConexionBD):
             records = cursor.fetchall()
             for row in records:
                 venta = VentaTienda(row["tienda"], row["ventas"])
+                ventas.append(venta)
+
+        except mysql.connector.Error as error:
+            print(f"Fallo la insercion {error}")
+        finally:
+            self.cerrar_conexion()
+        return ventas
+
+    
+    def ventasPorAnio(self) -> list:
+        ventas: list = []
+        try:
+            super().conetarse()
+            cursor = self.connection.cursor()
+
+            sql_select_query = """
+            SELECT YEAR (fecha) anio, sum(ventas) ventas
+                FROM prowebco_cocid.ventas_semanales 
+                group by YEAR (fecha) 
+                order by YEAR (fecha) desc
+            """
+            cursor = self.connection.cursor(dictionary=True)
+            cursor.execute(sql_select_query)
+            records = cursor.fetchall()
+            for row in records:
+                venta = VentaAnio(row["anio"], row["ventas"])
                 ventas.append(venta)
 
         except mysql.connector.Error as error:

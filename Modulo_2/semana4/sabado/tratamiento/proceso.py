@@ -15,3 +15,8 @@ def ProcesoVentasTienda():
     ventasP = VentasPersistencia()
     ventas_departamento = ventasP.ventasPorTienda()
     print(ventas_departamento)
+
+def ProcesoVentasAnio():
+    ventasP = VentasPersistencia()
+    ventas_departamento = ventasP.ventasPorAnio()
+    print(ventas_departamento)
