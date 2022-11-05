@@ -1,3 +1,3 @@
-from presentacion.app import App 
+from formulario.form_main import FormularioMain
 
-App().mainloop()
+FormularioMain()
