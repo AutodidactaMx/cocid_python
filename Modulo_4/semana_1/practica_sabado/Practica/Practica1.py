@@ -4,7 +4,6 @@ from matplotlib import pyplot as plt
 dias = np.arange(0, 132,dtype = np.int32)
 temp = np.random.uniform(18, 32, dias.size)
 
-
 media = np.zeros((dias.size), dtype=float) 
 median = np.copy(media)  
 minimo = np.copy(media)  

@@ -1,3 +1,15 @@
+'''
+En estadística, la desviación típica 
+(también conocida como desviación estándar es una medida que se utiliza para cuantificar 
+la variación o la dispersión de un conjunto de datos numéricos.1​
+Una desviación estándar baja indica que la mayor parte de los datos de una muestra 
+tienden a estar agrupados cerca de su media,
+mientras que una desviación estándar alta indica que los datos se extienden 
+sobre un rango de valores más amplio.
+
+Analisar el peso de  niños 
+'''
+
 import matplotlib.pyplot as plt 
 import numpy as np 
 

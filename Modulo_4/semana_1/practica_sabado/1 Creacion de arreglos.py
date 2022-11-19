@@ -1,20 +1,16 @@
 '''Creacion de arreglos'''
 import numpy as np
 
-arreglo = np.array([])
+lista = [1,2,3]
+arreglo = np.array([[lista],[lista]])
 print("\n Arreglo vacio")
 print(arreglo)
 
-arreglo_agregado = np.append(arreglo, [7, 8, 9], axis=0)
+arreglo_agregado = np.append(arreglo, [7, 8, 9])
 print("\n Agregacion de datos")
 print(arreglo_agregado)
 
-arreglo_agregado = np.append(arreglo, [7, 8, 9], axis=0)
-print("\n Agregacion de datos")
-print(arreglo_agregado)
-
-
-vacio = np.empty((3, 4), dtype=int)
+vacio = np.empty((3, 2), dtype=int)
 print("\n Arreglo vacio")
 print(vacio)
 
