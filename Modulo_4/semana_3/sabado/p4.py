@@ -41,6 +41,8 @@ s = pd.concat([s1,s2],axis=1)
 print(s)
 s = pd.concat([s1.reset_index(drop=True),s2.reset_index(drop=True)],axis=1)
 print(s)
+dfs = s.rename(columns={0: 'newName1', 1: 'newName2'})
+print(dfs.describe())
 '''
 Creacion de Dataframe por medio de numpy
 '''

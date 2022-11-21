@@ -1,86 +1,74 @@
 '''
-Pandas cuenta con una gran funcionalidad a la hora de interactuar con texto, 
-es super versatil si estas interesado en crear modelos de análisis de lenguaje natural.
-Comencemos cargando nuestra librería y creando un diccionario con nombres de personas.
+Unid dataframe para unificar nuestros paquetes de información 
+concatenando numpy dataframe
 '''
 import pandas as pd
 import numpy as np
 
-data = {'names':['Sara Moreno 34',
-                 'jUAn GOMez 23',
-                 'CArlos mArtinez 89',
-                 'Alfredo VelaZques 3',
-                 'luis Mora 56',
-                 '@freddier #platzi 10',pd.NA]}
-
-
-df = pd.DataFrame(data)
 '''
-Para usar las funciones asociadas a texto usamos str en nuestro DataFrame
+Se configura el formato visual de tipo numerico
+'''
+pd.options.display.float_format = '{:,.2f}'.format
+np.set_printoptions(precision=2)
+'''
+Creacion de informacion por medio de numpy
 '''
 print("-"*100)
-print(df['names'].str.lower())
+x1 = np.random.rand(2,5) * 100
+x2 = np.random.rand(2,5) * -1
+print(x1)
+print(x2)
 '''
-Para mayúsculas igualmente:
-'''
-print("-"*100)
-print(df['names'].str.upper())
-'''
-Si queremos solo la primera letra en mayúscula:
+Concatenacion de arreglos
 '''
 print("-"*100)
-print(df['names'].str.capitalize())
+x = np.concatenate([x1,x2])
+x = np.concatenate([x1,x2],axis=1)
+print(x)
 '''
-Para contar la longitud de nuestro texto usamos:
-'''
-print("-"*100)
-print(df['names'].str.len())
-'''
-Para dividir el texto por espacios usamos split y definimos el carácter por
-el que queremos dividir, en este caso, un espacio vacío ' ' o '#':
+Creacion de series  usnado los arreglos de numpy
 '''
 print("-"*100)
-print(df['names'].str.split(' '))
-print("-"*100)
-print(df['names'].str.split('#'))
+s1 = pd.Series(x1[0], index=['a','b','c','d','e'])
+s2 = pd.Series(x2[0], index=['f','g','h','i','j'])
 '''
-Para seleccionar los primeros o últimos 5 caracteres usamos:
-'''
-print("-"*100)
-print(df['names'].str[:5])
-print("-"*100)
-print(df['names'].str[-5:])
-'''
-Podemos reemplazar una secuencia de caracteres por otra mediante:
+Concatenacion de series de dataFrame
 '''
 print("-"*100)
-print(df['names'].str.replace('Alfredo','Antonio'))
+s = pd.concat([s1,s2])
+print(s)
+s = pd.concat([s1,s2],axis=1)
+print(s)
+s = pd.concat([s1.reset_index(drop=True),s2.reset_index(drop=True)],axis=1)
+print(s)
 '''
-También podemos buscar una secuencia de texto en específico, en este caso,
-'ara':
-'''
-print("-"*100)
-print(df['names'].str.findall('ara'))
-'''
-También podemos crear un filtro basándonos en una secuencia de texto en
-específico, en este caso, las filas que tengan 'or':
+Creacion de Dataframe por medio de numpy
 '''
 print("-"*100)
-print(df['names'].str.contains('or'))
+df1 = pd.DataFrame(np.random.rand(3,2)*10, columns=['a','b'])
+df2 = pd.DataFrame(np.random.rand(3,2)*-1, columns=['a','b'], index=[2,3,4])
+print(df1)
+print(df2)
 '''
-Así mismo, podemos contar el número de ocurrencias de un caracter en específico,
-por ejemplo, cuántas veces aparece la letra 'a':
+Concatenacion de dataframes por medio de DataFrame
 '''
-print("-"*100)
-print(df['names'].str.lower().str.count('a'))
+dfs = pd.concat([df1,df2])
+print(dfs)
+dfs = pd.concat([df1,df2],axis=1)
+print(dfs)
+dfs = pd.concat([df1,df2],axis=1, join='inner')
+print(dfs)
+dfs = pd.concat([df1.reset_index(drop=True),df2.reset_index(drop=True)],axis=1)
 '''
-Existen comandos más avanzados usando Regex, por ejemplo, si quiero extraer los
-caracteres numéricos:
+Concatenacion por medio append  usandolo como agregacion
 '''
-print("-"*100)
-print(df['names'].str.extract('([0-9]+)', expand=False))
+print(dfs)
+dfs = df1.append(df2)
+print(dfs)
+dfs = df1.append(df2).append(df2)
+print(dfs)
 '''
-O, por ejemplo, si quiero extraer las menciones '@xxxx' del texto:
+Cambio de posicion filas por columnas
 '''
-print("-"*100)
-print(df['names'].str.replace('@[^\s]+',''))
+print(dfs.T)
+print(df1.T.append(df2.T))
