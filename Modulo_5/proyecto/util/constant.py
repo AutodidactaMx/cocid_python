@@ -1,0 +1,1 @@
+PATH_FILE = "./data/bienes_raices.csv"
