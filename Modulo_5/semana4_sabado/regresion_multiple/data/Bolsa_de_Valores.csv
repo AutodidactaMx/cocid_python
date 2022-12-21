@@ -1,4 +1,4 @@
-,Year,Month,Interest_Rate,Unemployment_Rate,Stock_Index_Price
+id,año,mes,tasa_de_interes,tasa_de_desempleo,precio_de_índice_de_acciones
 0,2017,12,2.75,5.3,1464
 1,2017,11,2.5,5.3,1394
 2,2017,10,2.5,5.3,1357

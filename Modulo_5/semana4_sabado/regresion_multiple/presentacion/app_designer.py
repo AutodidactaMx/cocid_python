@@ -3,19 +3,18 @@ import util.generic as utl
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-
 class AppDesigner(tk.Tk):    
     frame_zone_bottom = None
     frame_zone_top = None
     frame_zone_bottom_left = None
     frame_zone_bottom_rigth = None
-    
-    def __init__(self): 
-        super().__init__()    
-            
+
     def prediccion(self) : 
-        pass           
-        
+        pass    
+
+    def __init__(self): 
+        super().__init__()                
+    
     def config_window(self):
         self.title('Master panel')        
         w, h = 1110,800                                                                     
@@ -81,7 +80,6 @@ class AppDesigner(tk.Tk):
         self.canvas_figure_right = FigureCanvasTkAgg(self.figure_right, self.frame_zone_bottom)
         self.canvas_figure_right.get_tk_widget().pack(side=tk.RIGHT, fill=tk.BOTH,pady=20)    
         
-    
     def initialize_component(self):                
         self.config_window()
         self.frameZoneTop()

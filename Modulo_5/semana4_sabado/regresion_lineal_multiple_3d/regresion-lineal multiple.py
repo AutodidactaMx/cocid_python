@@ -10,7 +10,7 @@ import tkinter as tk
 
 sns.set()
 
-df = pd.read_csv('softdrink.csv')
+df = pd.read_csv('./regresion_lineal_multiple_3d/softdrink.csv')
 
 x = df[['x1','x2']].values
 y = df[['y']].values
