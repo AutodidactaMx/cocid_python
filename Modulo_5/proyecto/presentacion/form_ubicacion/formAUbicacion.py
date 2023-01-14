@@ -24,7 +24,7 @@ class FormUbicacion(FormUbicacionDesigner):
     
     def grafica(self,resumen):
         axes = self.figure_ubicacion.subplots()
-        ax = resumen.plot.bar(x='Estado', y='Frecuencia',  ax=axes)
+        ax = resumen.plot.bar(x='Estado', y='Frecuencia',  ax=axes,  color=(0.2, 0.4, 0.6, 0.6))
         ax.set_ylabel('Frecuencia')
         ax2 = resumen.plot.line(x='Estado', y='Acumulativa',  marker='o', secondary_y=True, ax=ax, color = 'orange')
         ax2.set_ylim(0, 100)

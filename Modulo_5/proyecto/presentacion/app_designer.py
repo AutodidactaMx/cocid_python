@@ -1,56 +1,84 @@
 import tkinter as tk
 import util.generic as utl
-from pandastable import Table
+from tkinter import filedialog as fd
 
 
 class AppDesigner(tk.Tk):
 
     def __init__(self):
-        super().__init__()
+        super().__init__()    
+        self.filename = None
+
+    def select_file(self):
+        filetypes = ( ('text files', '*.csv'), ('All files', '*.*') )
+        self.filename = fd.askopenfilename(
+            title='Open a file',
+            initialdir='/',
+            filetypes=filetypes)
+        self.label.config(text =  self.filename)
+        self.focus()    
         
     def abrir_estadistico_edad(self):
         pass   
     def abrir_estadistico_ubicacion(self):
         pass   
     def abrir_estadistico_precio_area(self):
+        pass    
+    def abrir_estadistico_agrupamiento(self):
         pass
 
     def initialize_component(self):
         self.config_window()
-        self.frameGeneral() 
+        self.frameTitulo()
+        self.frameCuerpo()        
         self.botonAbrirSeccion1()
         self.botonAbrirSeccion2()
         self.botonAbrirSeccion3()
-        self.frameAbrirDatos()
-        self.tablaDatos()
+        self.botonAbrirSeccion4()
 
-    def config_window(self):
-        self.title('Analisis de bienes raices')
-        w, h = 900, 500
-        self.geometry("%dx%d+0+0" % (w, h))
-        self.config(bg='white')
-        utl.centrar_ventana(self, w, h)
-        
-    def frameGeneral(self):
-        self.frame_general = tk.Frame(self, bd=0, relief=tk.SOLID, bg='white')
-        self.frame_general.pack(side="top",fill=tk.BOTH, expand="yes")
+    def config_window(self):        
+        w, h = 1350, 400        
+        self.config(bg='#f2f3f7')
+        self.resizable(width=False, height=False)
+
+        utl.centrar_ventana(self, w, h)            
     
     def botonAbrirSeccion1(self):
-        self.btn_sta_edad = tk.Button(self.frame_general, font=('Times', 14) ,bg='#3a7ff6', bd=0,fg="#fff",text="Ver estadisticos Edad" , command=self.abrir_estadistico_edad)
-        self.btn_sta_edad.pack(side=tk.TOP,fill=tk.X,padx=10,pady=10)   
+        self.btn_sta_edad = tk.Button(self.frame_cuerpo, width=30, height=100, font=('Times', 15) ,bg='#e43a41', bd=0,fg="#fff",text="Ver Edad" , command=self.abrir_estadistico_edad)
+        self.btn_sta_edad.pack(side=tk.LEFT, padx=10,pady=10)           
         
     def botonAbrirSeccion2(self):
-        self.btn_sta_ubicacion = tk.Button(self.frame_general, font=('Times', 14) ,bg='#3a7ff6', bd=0,fg="#fff",text="Ver estadisticos Ubicacion" , command=self.abrir_estadistico_ubicacion)
-        self.btn_sta_ubicacion.pack(side=tk.TOP,fill=tk.X,padx=10,pady=10)   
+        self.btn_sta_ubicacion = tk.Button(self.frame_cuerpo,width=30, height=100, font=('Times', 15) ,bg='#ef7a29', bd=0,fg="#fff",text="Ver Ubicacion" , command=self.abrir_estadistico_ubicacion)
+        self.btn_sta_ubicacion.pack(side=tk.LEFT, padx=10,pady=10)
         
     def botonAbrirSeccion3(self):
-        self.btn_sta_edad_precio = tk.Button(self.frame_general,font=('Times', 14) ,bg='#3a7ff6', bd=0,fg="#fff", text="Ver estadisticos Precio vs Area" , command=self.abrir_estadistico_precio_area)
-        self.btn_sta_edad_precio.pack(side=tk.TOP,fill=tk.X,padx=10,pady=10) 
+        self.btn_sta_edad_precio = tk.Button(self.frame_cuerpo,width=30, height=100,font=('Times', 15) ,bg='#0072ee', bd=0,fg="#fff", text="Ver Precio vs Area" , command=self.abrir_estadistico_precio_area)
+        self.btn_sta_edad_precio.pack(side=tk.LEFT, padx=10,pady=10) 
     
-    def frameAbrirDatos(self):
-        self.frame_data = tk.Frame(self, bd=0, relief=tk.SOLID, bg='red')
-        self.frame_data.pack(side="top",fill=tk.BOTH, expand="yes")    
+    def botonAbrirSeccion4(self):
+        self.btn_sta_agrupamiento = tk.Button(self.frame_cuerpo,width=30, height=100,font=('Times', 15) ,bg='#AEB6BF', bd=0,fg="#fff", text="Ver Precio vs Edad de Compra" , command=self.abrir_estadistico_agrupamiento)
+        self.btn_sta_agrupamiento.pack(side=tk.LEFT, padx=10,pady=10) 
     
-    def tablaDatos(self):
-        self.tablaDatosDf = Table(self.frame_data, showtoolbar=True, showstatusbar=True, rows=5)
-        self.tablaDatosDf.show()    
+    def frameTitulo(self):
+        self.frame_titulo = tk.Frame(self, height=160, bd=0, relief=tk.SOLID, bg='#f2f3f7')
+        self.frame_titulo.pack_propagate(0)
+        self.frame_titulo.pack(side="top",fill=tk.X, padx=0, pady=15)     
+
+        # Titulo
+        self.labelTitulo = tk.Label(self.frame_titulo, text="Estudio de datos")
+        self.labelTitulo.config( fg="#666a88", font=("Verdana", 25), bg='#f2f3f7')
+        self.labelTitulo.pack(side="top")        
+
+        self.boton_cargar_ruta = tk.Button(self.frame_titulo, text="Elegir archivo fuente",
+                                       font=("Calibri", 12, "bold"), fg="white", padx=15,pady=10,
+                                       bg="#888a8a", bd=0, command=self.select_file) 
+        self.boton_cargar_ruta.pack(side="top",pady=15)   
+
+        self.label = tk.Label(self.frame_titulo, text='', font=( 'calibre', 10, 'bold'), bg='#f2f3f7', padx=15,pady=10)
+        self.label.pack(side="top" ,expand=True) 
+    
+    def frameCuerpo(self):
+        self.frame_cuerpo = tk.Frame(self, bd=0, relief=tk.SOLID)
+        self.frame_cuerpo.pack(side="top",fill=tk.BOTH, expand="yes")    
+        self.frame_cuerpo.pack_propagate(0)
+         

@@ -22,26 +22,26 @@ class FormPrecioDesigner(tk.Toplevel):
     def config_window(self):
         self.title('Analisis de precios')        
         w, h = 1200,800                                                                     
-        self.geometry("%dx%d+0+0" % (w, h))
-        self.config(bg='white')          
-        self.state('zoomed')   
+        utl.centrar_ventana(self,w,h)        
+        self.config(bg='#f2f3f7')
+        self.state('zoomed')                     
         
     def framePrincipal(self):
-        self.frame_zona_principal = tk.Frame(self, bd=1, relief=tk.SOLID, width=300, height=300, bg='white')
-        self.frame_zona_principal.pack(side="top",fill=tk.BOTH )
+        self.frame_zona_principal = tk.Frame(self, bd=0, relief=tk.SOLID, width=300, height=300, bg='#f2f3f7')
+        self.frame_zona_principal.pack(side="top" )
         
     def framePrincipalPanel1(self):
-        self.frame_zona_principal_panel1 = tk.Frame(self.frame_zona_principal, bd=1, height=300,width=300, relief=tk.SOLID, bg='white')
+        self.frame_zona_principal_panel1 = tk.Frame(self.frame_zona_principal, bd=0, height=300,width=300, relief=tk.SOLID, bg='#f2f3f7')
         self.frame_zona_principal_panel1.pack(side="left",fill=tk.X ,expand="yes")
     
     def framePrincipalPanel2(self):
-        self.frame_zona_principal_panel2 = tk.Frame(self.frame_zona_principal, bd=1, height=300, width=300,relief=tk.SOLID, bg='white')
+        self.frame_zona_principal_panel2 = tk.Frame(self.frame_zona_principal, bd=0, height=300, width=300,relief=tk.SOLID, bg='#f2f3f7')
         self.frame_zona_principal_panel2.pack(side="left",fill=tk.X ,expand="yes" )
    
     def graficaCorrelacion(self):
         self.figure_correlacion = plt.Figure()             
         self.canvas_figure_correlacion = FigureCanvasTkAgg(self.figure_correlacion, self.frame_zona_principal_panel1)
-        self.canvas_figure_correlacion.get_tk_widget().pack(side=tk.LEFT, fill=tk.X,expand="yes" ) 
+        self.canvas_figure_correlacion.get_tk_widget().pack(side=tk.LEFT ) 
     
     def graficaCoeficiente(self):
         self.figure_coeficiente = plt.Figure()             

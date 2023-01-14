@@ -24,7 +24,7 @@ class FormPrecio(FormPrecioDesigner):
     def analisis_correlacion(self):
         axes = self.figure_correlacion.subplots()        
         df_correlacion = self.df[["area_pies","Precio"]]        
-        pd.plotting.scatter_matrix(df_correlacion, figsize=(10,10), marker = 'o', hist_kwds = {'bins': 10}, s = 60, alpha = 0.8,ax=axes)        
+        pd.plotting.scatter_matrix(df_correlacion, figsize=(5,5), marker = 'o', hist_kwds = {'bins': 10}, s = 30, alpha = 0.4,ax=axes)        
         axes.set_title("Relación entre Area y precio")        
         plt.show()
         

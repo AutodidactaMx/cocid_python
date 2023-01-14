@@ -21,19 +21,19 @@ class FormUbicacionDesigner(tk.Toplevel):
         self.title('Analisis de variable de ubicación')        
         w, h = 1400,500                                                                     
         self.geometry("%dx%d+0+0" % (w, h))
-        self.config(bg='black')  
+        self.config(bg='#f2f3f7')  
         utl.centrar_ventana(self,w,h)
         
     def framePrincipal(self):
-        self.frame_zona_principal = tk.Frame(self, bd=0, relief=tk.SOLID, bg='white', width=100, height=100)
+        self.frame_zona_principal = tk.Frame(self, bd=0, relief=tk.SOLID, bg='#f2f3f7')
         self.frame_zona_principal.pack(side="top",fill=tk.BOTH )   
         
     def framePrincipalPanel1(self):
-        self.frame_zona_principal_panel1 = tk.Frame(self.frame_zona_principal, bd=1, relief=tk.SOLID, bg='white', width=100, height=100)
+        self.frame_zona_principal_panel1 = tk.Frame(self.frame_zona_principal, bd=0, relief=tk.SOLID, bg='#f2f3f7', width=100, height=100)
         self.frame_zona_principal_panel1.pack(side="left",fill=tk.BOTH, expand="yes")
         
     def framePrincipalPanel2(self):
-        self.frame_zona_principal_panel2 = tk.Frame(self.frame_zona_principal, bd=1,  relief=tk.SOLID, bg='white', width=100, height=100)
+        self.frame_zona_principal_panel2 = tk.Frame(self.frame_zona_principal, bd=0,  relief=tk.SOLID, bg='#f2f3f7', width=100, height=100)
         self.frame_zona_principal_panel2.pack(side="left",fill=tk.BOTH, expand="yes")
         
     def tablaEstadisticosUbicacion(self):

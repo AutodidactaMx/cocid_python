@@ -22,26 +22,25 @@ class FormEdadesDesigner(tk.Toplevel):
     
     def config_window(self):
         self.title('Analisis de variable de edades')        
-        w, h = 1024, 700                                                                     
+        w, h = 1024, 900                                                                     
         self.geometry("%dx%d+0+0" % (w, h))
-        self.config(bg='black')  
-        self.state('zoomed')  
+        self.config(bg='#f2f3f7')          
         utl.centrar_ventana(self,w,h)        
     
     def framePrincipal(self):
-        self.frame_zona_principal = tk.Frame(self, bd=1, height=200, relief=tk.SOLID, bg='white')
-        self.frame_zona_principal.pack(side="top",fill=tk.BOTH )
+        self.frame_zona_principal = tk.Frame(self, bd=1, height=200, relief=tk.SOLID, bg='#f2f3f7')
+        self.frame_zona_principal.pack(side="top",fill=tk.X )
         
     def framePrincipalPanel1(self):
-        self.frame_zona_principal_panel1 = tk.Frame(self.frame_zona_principal, bd=1,  height=300, width=200, relief=tk.SOLID, bg='green')
+        self.frame_zona_principal_panel1 = tk.Frame(self.frame_zona_principal, bd=0,  height=300, width=200, relief=tk.SOLID)
         self.frame_zona_principal_panel1.pack(side="left",fill=tk.X)
         
     def framePrincipalPanel2(self):
-        self.frame_zona_principal_panel2 = tk.Frame(self.frame_zona_principal, bd=1,  height=300,relief=tk.SOLID, bg='white')
+        self.frame_zona_principal_panel2 = tk.Frame(self.frame_zona_principal, bd=0,  height=300,relief=tk.SOLID, bg='#f2f3f7')
         self.frame_zona_principal_panel2.pack(side="left",fill=tk.X, expand="yes")
     
     def framePrincipalSecundario(self):
-        self.frame_zona_principal_secundario = tk.Frame(self, bd=1,  height=300, relief=tk.SOLID, bg='red')
+        self.frame_zona_principal_secundario = tk.Frame(self, bd=1,  height=300, relief=tk.SOLID, bg='#f2f3f7')
         self.frame_zona_principal_secundario.pack(side="top",fill=tk.BOTH, expand="yes")
      
     def tablaEstadisticos(self):
@@ -54,9 +53,9 @@ class FormEdadesDesigner(tk.Toplevel):
         self.canvas_figure_historgrama_edades.get_tk_widget().pack(side=tk.LEFT, fill=tk.BOTH)
     
     def graficaBarraEdades(self):
-        self.figure_barra_edades= plt.Figure(figsize=(300,20), dpi=80)
+        self.figure_barra_edades= plt.Figure(figsize=(100,20), dpi=80)
         self.canvas_figure_barra_edades = FigureCanvasTkAgg(self.figure_barra_edades, self.frame_zona_principal_secundario)
-        self.canvas_figure_barra_edades.get_tk_widget().pack(side=tk.LEFT, fill=tk.BOTH, ipady=50)
+        self.canvas_figure_barra_edades.get_tk_widget().pack(side=tk.LEFT,  ipady=10)
 
     
                     

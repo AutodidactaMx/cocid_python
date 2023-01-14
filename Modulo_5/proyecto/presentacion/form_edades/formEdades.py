@@ -34,12 +34,12 @@ class FormEdades(FormEdadesDesigner):
       def histograma_edades(self):
         axes = self.figure_histograma_edades.subplots()
         axes.set_title("Intervalos de la tabla de edades", fontsize=20)
-        self.df['edad_compra'].plot.hist(bins=6,edgecolor='black', linewidth=1.2,ax=axes)                        
+        self.df['edad_compra'].plot.hist(bins=6, linewidth=1.2,ax=axes,  color="#c9bf90")                        
         plt.show()
         
       def barra_edades(self,resumen_compra):
         axes = self.figure_barra_edades.subplots()        
-        axes.set_title("Distribución de frecuencias de la variable Edad", fontsize=20)
-        resumen_compra.plot.bar(x='edad_compra', y='count',ax=axes)
+        axes.set_title("Distribución de frecuencias de la variable Edad", fontsize=10)
+        resumen_compra.plot.bar(x='edad_compra', y='count',ax=axes,  color="#82b1c4")
         plt.show()
         
