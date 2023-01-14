@@ -18,7 +18,6 @@ class FormAgrupamientoDesigner(tk.Toplevel):
         self.graficaAgrupacion()
         self.graficaCodo()
         self.graficaDispersion()
-              
     
     def config_window(self):
         self.title('Analisis de variable de edades')        

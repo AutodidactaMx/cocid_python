@@ -1,31 +1,24 @@
 import tkinter as tk
 import util.generic as utl
 from tkinter import filedialog as fd
+import pandas as pd
 
 
 class AppDesigner(tk.Tk):
-
+    
     def __init__(self):
-        super().__init__()    
+        super().__init__()
         self.filename = None
-
-    def select_file(self):
-        filetypes = ( ('text files', '*.csv'), ('All files', '*.*') )
-        self.filename = fd.askopenfilename(
-            title='Open a file',
-            initialdir='/',
-            filetypes=filetypes)
-        self.label.config(text =  self.filename)
-        self.focus()    
         
-    def abrir_estadistico_edad(self):
-        pass   
-    def abrir_estadistico_ubicacion(self):
-        pass   
-    def abrir_estadistico_precio_area(self):
-        pass    
-    def abrir_estadistico_agrupamiento(self):
-        pass
+    def carga_df(self):
+        self.df = pd.read_csv(self.filename)
+        self.df = self.df.replace(' ', pd.NA)
+        self.df = self.df.dropna(subset=['edad_compra'])
+        self.df = self.df.dropna(subset=['anio_venta'])
+        self.df['edad_compra'] = pd.to_numeric(self.df['edad_compra'])
+        self.df["anio_venta"] = self.df["anio_venta"].astype(str)
+        self.df["Mes_venta"] = self.df["Mes_venta"].astype(
+            str).str.pad(width=2, side='left', fillchar='0')        
 
     def initialize_component(self):
         self.config_window()
@@ -36,17 +29,41 @@ class AppDesigner(tk.Tk):
         self.botonAbrirSeccion3()
         self.botonAbrirSeccion4()
 
+    def select_file(self):
+        filetypes = ( ('text files', '*.csv'), ('All files', '*.*') )
+        self.filename = fd.askopenfilename(
+            title='Open a file',
+            initialdir='/',
+            filetypes=filetypes)
+        self.label.config(text =  self.filename)
+        self.focus() 
+        self.carga_df()
+    
+    def abrir_estadistico_edad(self):
+        pass   
+    def abrir_estadistico_ubicacion(self):
+        pass   
+    def abrir_estadistico_precio_area(self):
+        pass    
+    def abrir_estadistico_agrupamiento(self):
+        pass
+    
     def config_window(self):        
         w, h = 1350, 400        
         self.config(bg='#f2f3f7')
         self.resizable(width=False, height=False)
 
-        utl.centrar_ventana(self, w, h)            
-    
+        utl.centrar_ventana(self, w, h)   
+
+    def frameCuerpo(self):
+        self.frame_cuerpo = tk.Frame(self, bd=0, relief=tk.SOLID)
+        self.frame_cuerpo.pack(side="top",fill=tk.BOTH, expand="yes")    
+        self.frame_cuerpo.pack_propagate(0)
+
     def botonAbrirSeccion1(self):
         self.btn_sta_edad = tk.Button(self.frame_cuerpo, width=30, height=100, font=('Times', 15) ,bg='#e43a41', bd=0,fg="#fff",text="Ver Edad" , command=self.abrir_estadistico_edad)
-        self.btn_sta_edad.pack(side=tk.LEFT, padx=10,pady=10)           
-        
+        self.btn_sta_edad.pack(side=tk.LEFT, padx=10,pady=10)  
+
     def botonAbrirSeccion2(self):
         self.btn_sta_ubicacion = tk.Button(self.frame_cuerpo,width=30, height=100, font=('Times', 15) ,bg='#ef7a29', bd=0,fg="#fff",text="Ver Ubicacion" , command=self.abrir_estadistico_ubicacion)
         self.btn_sta_ubicacion.pack(side=tk.LEFT, padx=10,pady=10)
@@ -76,9 +93,3 @@ class AppDesigner(tk.Tk):
 
         self.label = tk.Label(self.frame_titulo, text='', font=( 'calibre', 10, 'bold'), bg='#f2f3f7', padx=15,pady=10)
         self.label.pack(side="top" ,expand=True) 
-    
-    def frameCuerpo(self):
-        self.frame_cuerpo = tk.Frame(self, bd=0, relief=tk.SOLID)
-        self.frame_cuerpo.pack(side="top",fill=tk.BOTH, expand="yes")    
-        self.frame_cuerpo.pack_propagate(0)
-         

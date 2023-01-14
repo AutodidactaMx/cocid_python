@@ -16,7 +16,7 @@ class FormUbicacionDesigner(tk.Toplevel):
         self.framePrincipalPanel2()  
         self.tablaEstadisticosUbicacion()
         self.graficaUbicacion()    
-        
+    
     def config_window(self):
         self.title('Analisis de variable de ubicación')        
         w, h = 1400,500                                                                     
@@ -46,7 +46,3 @@ class FormUbicacionDesigner(tk.Toplevel):
         self.canvas_figure_ubicacion.get_tk_widget().pack(side=tk.LEFT, fill=tk.X, pady=20)    
     
    
-      
-   
-        
-              

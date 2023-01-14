@@ -5,10 +5,10 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from pandastable import Table
 
 class FormEdadesDesigner(tk.Toplevel):        
-    
+
     def __init__(self): 
         super().__init__()
-        
+    
     def initialize_component(self): 
         self.config_window()  
         self.framePrincipal()        
@@ -18,7 +18,6 @@ class FormEdadesDesigner(tk.Toplevel):
         self.tablaEstadisticos()
         self.graficaHistogramaEdades()
         self.graficaBarraEdades()
-              
     
     def config_window(self):
         self.title('Analisis de variable de edades')        
@@ -58,5 +57,3 @@ class FormEdadesDesigner(tk.Toplevel):
         self.canvas_figure_barra_edades.get_tk_widget().pack(side=tk.LEFT,  ipady=10)
 
     
-                    
- 

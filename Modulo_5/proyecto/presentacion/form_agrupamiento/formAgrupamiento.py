@@ -7,18 +7,18 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from presentacion.form_agrupamiento.formAgrupamiento_designer import FormAgrupamientoDesigner
 sns.set()
-class FormAgrupamiento(FormAgrupamientoDesigner):
-      df = None          
+
+class FormAgrupamiento(FormAgrupamientoDesigner):            
       
-      def __init__(self, df):  
+    def __init__(self, df):  
         super().__init__() 
         self.df = df
         self.initialize_component()                   
         self.inicio() 
         self.agrupado() 
-        self.codo()                               
-        
-      def codo(self):
+        self.codo()  
+
+    def codo(self):
         clientes = self.df[['Precio','edad_compra']]
         escalador = MinMaxScaler().fit(clientes.values)
         clientes = pd.DataFrame(escalador.transform(clientes.values),columns=["Precio", "edad_compra"])
@@ -30,9 +30,9 @@ class FormAgrupamiento(FormAgrupamientoDesigner):
         axes = self.figure_codo.subplots()  
         axes.scatter(range(2, 10), inercias, marker="o", s=180, color="purple")
         axes.set_title("Codo", fontsize=20)        
-        plt.show()              
+        plt.show()   
 
-      def agrupado(self):                
+    def agrupado(self):                
         clientes = self.df[['Precio','edad_compra']]
         escalador = MinMaxScaler().fit(clientes.values)
         clientes = pd.DataFrame(escalador.transform(clientes.values),columns=["Precio", "edad_compra"])
@@ -55,16 +55,11 @@ class FormAgrupamiento(FormAgrupamientoDesigner):
         axes.set_ylabel("Edad de compra", fontsize=15)        
         axes.set_xlim(-0.1, 1.1)
         axes.set_ylim(-0.1, 1.1) 
-        plt.show() 
-
-      def inicio(self):                
+        plt.show()     
+    
+    def inicio(self):                
         clientes = self.df[['Precio','edad_compra']]                
         axes = self.figure_dispersion.subplots()  
         axes.set_title("Original", fontsize=20)
         clientes.plot.scatter(x='Precio', y='edad_compra', ax=axes)
         plt.show() 
-    
-                
-
-        
-        

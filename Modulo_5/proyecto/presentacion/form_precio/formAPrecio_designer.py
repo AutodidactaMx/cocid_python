@@ -13,18 +13,18 @@ class FormPrecioDesigner(tk.Toplevel):
         self.framePrincipal()
         self.framePrincipalPanel1()
         self.framePrincipalPanel2() 
-        
         self.graficaCorrelacion()
         self.graficaCoeficiente()
         self.labelR2()
-        self.graficaRegresion()     
-        
+        self.graficaRegresion() 
+    
     def config_window(self):
         self.title('Analisis de precios')        
         w, h = 1200,800                                                                     
         utl.centrar_ventana(self,w,h)        
         self.config(bg='#f2f3f7')
-        self.state('zoomed')                     
+        self.state('zoomed')     
+
         
     def framePrincipal(self):
         self.frame_zona_principal = tk.Frame(self, bd=0, relief=tk.SOLID, width=300, height=300, bg='#f2f3f7')

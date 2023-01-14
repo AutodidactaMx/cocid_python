@@ -20,14 +20,13 @@ class FormPrecio(FormPrecioDesigner):
         self.analisis_coeficiente()
         self.analisis_predictivo()
 
-
     def analisis_correlacion(self):
         axes = self.figure_correlacion.subplots()        
         df_correlacion = self.df[["area_pies","Precio"]]        
         pd.plotting.scatter_matrix(df_correlacion, figsize=(5,5), marker = 'o', hist_kwds = {'bins': 10}, s = 30, alpha = 0.4,ax=axes)        
         axes.set_title("Relación entre Area y precio")        
         plt.show()
-        
+
     def analisis_coeficiente(self):
         axes = self.figure_coeficiente.subplots()        
         df_converage = self.df[["area_pies","Precio"]]                                
@@ -35,8 +34,8 @@ class FormPrecio(FormPrecioDesigner):
         scaled = scaler.fit_transform(df_converage[["area_pies","Precio"]])
         scaledT = scaled.T 
         covariance_matrix = np.cov(scaledT)                                
-        sns.set(font_scale=1.5)
-        
+        sns.set(font_scale=1.5) 
+
         hm = sns.heatmap(covariance_matrix,
                         cbar=True,
                         annot=True,
@@ -45,7 +44,7 @@ class FormPrecio(FormPrecioDesigner):
                         annot_kws={'size': 12},
                         yticklabels=["area_pies","Precio"],
                         xticklabels=["area_pies","Precio"],ax=axes)
-   
+    
     def analisis_predictivo(self):                                      
         
         x = self.df['area_pies'].values.reshape(-1, 1)
