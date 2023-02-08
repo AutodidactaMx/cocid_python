@@ -1,1 +1,0 @@
-RUTA_DATOS = "./data/"
