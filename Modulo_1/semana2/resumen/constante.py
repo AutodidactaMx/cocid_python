@@ -1,3 +1,3 @@
-PI = 3.141592
+VARIABLE_PI = 3.141592
 
-print(PI)
+print(VARIABLE_PI)
