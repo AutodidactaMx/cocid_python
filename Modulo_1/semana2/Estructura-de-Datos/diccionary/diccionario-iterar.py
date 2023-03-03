@@ -1,5 +1,6 @@
-diccionario = {'nombre' : 'Jesus', 'edad' : 33, 'cursos': ['Python','Django']}
-diccionario['cursos_java']= ['Java','Spring']
+diccionario = {'nombre' : 'Jesus',"panes" : []}
+usuario_entrada =  ['concha','cuernitos']
+diccionario['panes'] = usuario_entrada
 
 for key in diccionario:
   print (key, ":", diccionario[key])

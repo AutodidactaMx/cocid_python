@@ -3,6 +3,8 @@
 # Example - (a, b, c) = List/tuple
 a, b, c = '123'
 print(f"{a} {b} {c}")
+a, b, c = '123'
+print(f"{a} {b} {c}")
 a, b, c = [1, 2, 3]
 print(f"{a} {b} {c}")
 mi_dict = {'uno': 1, 'dos':2, 'tres': 3}

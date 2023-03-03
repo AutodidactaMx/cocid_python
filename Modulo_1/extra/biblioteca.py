@@ -1,24 +1,24 @@
-from configuracion import CANCIONES as canciones
-from configuracion import RUTA_CANCIONES as ruta_libros
+from configuracion import LIBROS as libro
+from configuracion import RUTA_LIBROS as ruta_libros
 
 
 def seleccion(entrada):
     opcion = 0
     try:
         opcion = int(entrada)
-        verificar_opcion(opcion)
+        validar_opcion(opcion)
         print("#"*80)
-        print("Has seleccionado", canciones[opcion])
+        print("Has seleccionado", libro[opcion])
         print("#"*80, end="\n\n")
     except ValueError:
-        print("Debe elegir un numero una opcion numerica")
+        print("Debe elegir una opcion numerica")
         exit()
     return opcion
 
 
-def verificar_opcion(opcion):
-    if(opcion < 0 or opcion > 5):
-        print("Los siento no eligió una opción disponible")
+def validar_opcion(opcion):    
+    if(opcion < 1 or opcion > 3):
+        print("Los siento no eligió un numero disponible")
         exit()
     elif(opcion == 5):
         print("Adios")
@@ -26,8 +26,14 @@ def verificar_opcion(opcion):
 
 
 def mostrar_cancion(opcion):
-    with open((ruta_libros+canciones[opcion]), "r") as f:
+    with open((ruta_libros+libro[opcion]), "r") as f:
         line = f.readline()
         while line:
             line = f.readline()
             print(line)
+    mensaje_mas_opcion()
+
+def mensaje_mas_opcion():        
+    print("#"*80)
+    print("Selecciona un libro".center(80))
+    print("#"*80, end="\n\n")
