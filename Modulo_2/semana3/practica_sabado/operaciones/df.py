@@ -1,4 +1,4 @@
-class DF:
+class DF_Modelo:
 
     def __init__(self, valor_x, xi, fi, Fi, fr, Fr) -> None:
         self.valor_x = valor_x

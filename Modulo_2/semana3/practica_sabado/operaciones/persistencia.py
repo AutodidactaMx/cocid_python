@@ -1,4 +1,5 @@
-#pip install openpyxl   
+## Si te marca error por dependencias 
+## instala pip install openpyxl
 import csv
 from openpyxl import load_workbook
 RUTA_ALMACENAMIENTO='./data/'

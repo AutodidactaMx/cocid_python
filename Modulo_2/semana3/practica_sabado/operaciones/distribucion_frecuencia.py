@@ -1,22 +1,21 @@
 from math import sqrt
-from operaciones.df import DF
+from operaciones.df import DF_Modelo as DF
 
-
-class Distribucion_Frecuencia:
+class Distribucion_Frecuencia_Calculo:
     """Las distribuciones de frecuencias son tablas en que se dispone 
     las modalidades de la variable por filas. En las columnas se dispone 
     el número de ocurrencias por cada valor, porcentajes, etc. La finalidad de las
-    agrupaciones en frecuencias es facilitar la obtención de la información que contienen los datos."""
-    __datos_agrupados: list = []
-    __minimo: float = 0
-    __maximo: float = 0
-    __rango: float = 0
-    __n: float = 0
-    __intervalo: float = 0
-    __amplitud: float = 0
+    agrupaciones en frecuencias es facilitar la obtención de la información que contienen los datos."""    
 
     def __init__(self, datos_agrupados: list):
-        self.__datos_agrupados = datos_agrupados
+        self.__datos_agrupados: list = []
+        self.__minimo: float = 0
+        self.__maximo: float = 0
+        self.__rango: float = 0
+        self.__n: float = 0
+        self.__intervalo: float = 0
+        self.__amplitud: float = 0
+        self.__datos_agrupados = datos_agrupados        
         self.valores_calculo()
 
     def calculo(self) -> dict:
@@ -43,12 +42,11 @@ class Distribucion_Frecuencia:
                                  coleccion_numeros=self.__datos_agrupados)
             Fi += fi
             fr = self.calculo_fr(fi=fi, n=self.__n)
-            Fr += fr            
-            dfs.append(DF(valor_x=self.calculo_x(
-                valor=x_inicial, amplitud=self.__amplitud),
-                xi=self.calculo_xi(
-                valor=x_inicial, amplitud=self.__amplitud),
-                fi=fi, Fi=Fi, fr=fr, Fr=Fr))
+            Fr += fr 
+            categoria = self.calculo_x( valor=x_inicial, amplitud=self.__amplitud)
+            marca_clase = self.calculo_xi( valor=x_inicial, amplitud=self.__amplitud)
+            modelo_df = DF(valor_x= categoria, xi=marca_clase, fi=fi, Fi=Fi, fr=fr, Fr=Fr)
+            dfs.append(modelo_df)
             x_inicial += self.__amplitud
 
         return dfs
