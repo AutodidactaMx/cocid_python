@@ -1,3 +1,4 @@
+#pip install openpyxl   
 import csv
 from openpyxl import load_workbook
 RUTA_ALMACENAMIENTO='./data/'
@@ -25,5 +26,5 @@ def leerExcel(nombre_archivo,celda_ini, celda_fin):
     datos = []
     cells = sheetH[celda_ini:celda_fin]
     for c1, in cells:
-        datos.append(c1.value)
+        datos.append(float(c1.value))
     return datos
