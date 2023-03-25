@@ -4,7 +4,7 @@ from modelos.modelo_venta import VentasSemanales
 
 
 def obtenerDatos():
-    informacion_sismo = []
+    informacion = []
     with open((f"{RUTA_DATOS}"), mode="r", encoding="utf-8") as archivo:
         next(archivo)
         for line in archivo.readlines():
@@ -15,5 +15,5 @@ def obtenerDatos():
                 fecha=datetime.strptime(fila[2], '%d/%m/%Y').date(),
                 ventasSemanales=float(fila[3]),
                 esVacaciones=bool(fila[4]))
-            informacion_sismo.append(obj)
-    return informacion_sismo
+            informacion.append(obj)
+    return informacion

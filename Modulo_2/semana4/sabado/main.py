@@ -1,3 +1,4 @@
+'''pip install mysql-connector-python'''
 from tratamiento.proceso import *
 
 while(True):
@@ -7,7 +8,7 @@ while(True):
         1) CargaDatos
         2) Ventas por departamento
         3) Ventas por tienda
-        4) Ventas por tienda        
+        4) Ventas por anio        
         """)
         opcion = int(input("Elije el proceso a ejecutar : "))
         if opcion == 1:
