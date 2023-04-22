@@ -3,10 +3,19 @@ from tkinter import ttk, messagebox
 from tkinter.font import BOLD
 import utileria.generico as utl
 from formulario.form_persona import FormularioPersona
+import servicio.control as servicio
 
 
 class Aplicacion:
-        
+
+    def crear_tabla(self):
+        error = servicio.crear_tabla()
+        if (error == 1):
+            messagebox.showerror(
+                message=f"La tabla debe de existir", title="Error")
+        else:
+            messagebox.showinfo(message=f"La tabla creada", title="Error")
+
     def verificar(self):
         usu = self.usuario.get()
         password = self.password.get()        
@@ -61,5 +70,10 @@ class Aplicacion:
         inicio = tk.Button(frame_form_fill,text="Iniciar sesion",font=('Times', 15,BOLD),bg='#3a7ff6', bd=0,fg="#fff",command=self.verificar)
         inicio.pack(fill=tk.X, padx=20,pady=20)        
         inicio.bind("<Return>", (lambda event: self.verificar()))
+
+        crear_tabla = tk.Button(frame_form_fill,text="Crear tabla",font=('Times', 15,BOLD),bg='#ccc', bd=0,fg="#fff",command=self.crear_tabla)
+        crear_tabla.pack(fill=tk.X, padx=20,pady=20)        
+        crear_tabla.bind("<Return>", (lambda event: self.verificar()))
+
         #end frame_form_fill
         self.ventana.mainloop()
