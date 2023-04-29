@@ -27,7 +27,7 @@ class MyApp(tk.Tk):
 
         # Crear el checkbutton
         check_var =  tk.BooleanVar()          
-        check = Checkbutton(frame_principal, text="Con azúcar",variable=check_var,
+        check = tk.Checkbutton(frame_principal, text="Con azúcar",variable=check_var,
             onvalue=1, offvalue=0)        
         check.pack(padx=10, pady=5)
 
