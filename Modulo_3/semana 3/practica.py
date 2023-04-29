@@ -26,8 +26,9 @@ class MyApp(tk.Tk):
         entry.pack(fill=tk.X, padx=10, pady=5)
 
         # Crear el checkbutton
-        check_var = tk.BooleanVar()
-        check = ttk.Checkbutton(frame_principal, text="Marcar si es necesario", variable=check_var)
+        check_var =  tk.BooleanVar()          
+        check = Checkbutton(frame_principal, text="Con azúcar",variable=check_var,
+            onvalue=1, offvalue=0)        
         check.pack(padx=10, pady=5)
 
         # Crear el combobox
