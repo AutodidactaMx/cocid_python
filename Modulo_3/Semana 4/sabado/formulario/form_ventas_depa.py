@@ -1,11 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-from tkinter import filedialog as fd
 from tratamiento.proceso import *
 import utileria.generico as utl
 from modelos.modelo_cbx import ModeloCombo
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 
 class FormularioVentaDep(tk.Toplevel):
@@ -24,18 +21,8 @@ class FormularioVentaDep(tk.Toplevel):
         if ventas:
             for ref, v in enumerate(ventas):
                 self.tv.insert(parent='', index=ref, iid=ref, text='', values=(
-                    v.tienda, v.departamento, v.ventas))
-        departamentos = list(map(lambda v : v.departamento, ventas))
-        total_ventas = list(map(lambda v : v.ventas, ventas))
-        #clear subplots        
-        self.graficaBar.cla()        
-        self.graficaBar.set_title('Ventas por departamento')
-        self.graficaBar.set_ylabel('Ventas')
-        self.graficaBar.set_xlabel('Departamentos')           
-        self.graficaBar.bar(departamentos, total_ventas,width = 0.5)
-        self.canvas_figure_plot.draw()  
+                    v.tienda, v.departamento, v.ventas))         
         
-
     def comboDepartamento(self):
         self.comboList = []
         self.comboList.append(ModeloCombo(0, f"Todos"))
@@ -81,12 +68,9 @@ class FormularioVentaDep(tk.Toplevel):
     
         self.frame_zone_bottom = tk.Frame(self, bd=0, height=200, relief=tk.SOLID, bg='white')
         self.frame_zone_bottom.pack(side="bottom",expand=tk.YES,fill=tk.X)
-
-        self.frame_zone_bottom_left = tk.Frame(self.frame_zone_bottom, bd=0,  relief=tk.SOLID, bg='white')
-        self.frame_zone_bottom_left.pack(side="left",expand=tk.YES,fill=tk.BOTH)        
-    
+      
         # Tabla
-        self.tv = ttk.Treeview(self.frame_zone_bottom_left, show='headings')
+        self.tv = ttk.Treeview(self.frame_zone_bottom, show='headings')
         self.tv['columns'] = ('tienda', 'departamento', 'ventas')
         self.tv.column('#0', width=0)
         self.tv.column('tienda',  width=100)
@@ -98,17 +82,7 @@ class FormularioVentaDep(tk.Toplevel):
         self.tv.heading('departamento', text='departamento')
         self.tv.heading('ventas', text='ventas')
         self.tv.pack(side="top", padx=10, pady=10)
-        
-
-        # Grafica        
-        self.frame_zone_bottom_rigth = tk.Frame(self.frame_zone_bottom, bd=0, relief=tk.SOLID, bg='red')
-        self.frame_zone_bottom_rigth.pack(side="right",expand=tk.YES,fill=tk.BOTH)        
-        self.figure_plot = plt.Figure()
-        
-        self.canvas_figure_plot = FigureCanvasTkAgg(self.figure_plot, self.frame_zone_bottom_rigth)
-        self.canvas_figure_plot.get_tk_widget().pack(side=tk.TOP,expand=tk.YES, fill=tk.BOTH)
-        self.graficaBar = self.figure_plot.add_subplot() 
-        
+                    
         self.comboDepartamento()
         self.consulta()
 
