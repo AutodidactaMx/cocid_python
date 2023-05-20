@@ -4,7 +4,7 @@ arr1 = np.array([1, 2, 3, 4, 5])
 arr2 = np.array([4, 5, 6, 7])
 
 print("Union")
-print(np.union1d(arr1, arr2))
+print(np.union3d(arr1, arr2))
 
 print("Intercepcion")
 print(np.intersect1d(arr1, arr2,assume_unique=True))
