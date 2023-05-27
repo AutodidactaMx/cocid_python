@@ -12,3 +12,5 @@ print(df.sum(level='año'))
 print(df.count(level='año'))
 print(df.mean(level='año'))
 
+print(df.groupby(['pais'])[['poblacion']].aggregate([np.mean]))
+
