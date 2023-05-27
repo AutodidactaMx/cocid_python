@@ -1,10 +1,21 @@
 import pandas as pd
-import numpy as np
-pd.options.display.float_format = '{:,.1f}'.format
-df = pd.read_csv('./index/poblacion.csv')
+import matplotlib.pyplot as plt
 
+# Crear DataFrame de ejemplo
+data = {'nombre': ['Juan', 'María', 'Pedro', 'Ana', 'Luis'],
+        'género': ['Masculino', 'Femenino', 'Masculino', 'Femenino', 'Masculino']}
+df = pd.DataFrame(data)
 
-df = df.set_index(['año','pais']).sort_index(ascending=False)
-#print(df.index.get_level_values(0))
-#print(df.index.get_level_values(1))
-print(df.head(10))
+# Contar el número de ocurrencias de cada categoría
+count = df['género'].value_counts()
+
+# Crear gráfico de barras
+plt.bar(count.index, count.values)
+
+# Personalizar el gráfico
+plt.title('Distribución de Género')
+plt.xlabel('Género')
+plt.ylabel('Cantidad')
+
+# Mostrar el gráfico
+plt.show()
