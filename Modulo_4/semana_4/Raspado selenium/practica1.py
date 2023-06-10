@@ -1,3 +1,8 @@
+'''
+pip install pandas==1.5.3
+pip install selenium==4.7.2
+pip install matplotlib==3.7.0
+'''
 import time
 import pandas as pd
 from selenium import webdriver
@@ -8,7 +13,7 @@ RUTA_ORIGEN = "C:/Users/Jesus/Downloads/202101010000TMed.csv"
 
 class Extraccion():
     
-    def setup_method(self):
+    def setup_method(self):    
         self.driver = webdriver.Chrome('./chromedriver')
         self.vars = {}
 
