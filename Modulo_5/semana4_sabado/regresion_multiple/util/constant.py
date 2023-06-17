@@ -1,0 +1,7 @@
+PATH_FILE = "./data/ventas.csv"
+GENERO = 4
+CIUDADES = 2
+TIPO_CLIENTE = 3
+TOTA_VENTAS = 9
+FECHA = 10
+HORA = 11

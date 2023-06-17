@@ -1,0 +1,197 @@
+﻿ID,Edificio,anio_venta,Mes_venta,Tipo_propiedad,numero_propiedad,area_pies,Precio,Estatus,id_cliente,Entidad,Nombre,Apellido,edad_compra,Intervalo,Y,M,D,genero,Pais,Estado,proposito,satisfaccion,Hipoteca,Fuente
+1030,1,2005,11,Apartamento,30,743.09,246172.68, Vendido ,C0028,Persona,Madalyn,Mercer,19,18-25,1986,6,21,F,EE.UU.,California,Hogar,5,No,Sitio web
+1029,1,2005,10,Apartamento,29,756.21,246331.90, Vendido ,C0027,Persona,Lara,Carrillo,22,18-25,1983,2,24,F,EE.UU.,California,Hogar,5,No,Sitio web
+2002,2,2007,7,Apartamento,2,587.28,209280.91, Vendido ,C0112,Persona,Donavan,Flowers,22,18-25,1985,12,27,M,EE.UU.,California,Hogar,1,Yes,Cliente
+2031,2,2007,12,Apartamento,31,1604.75,452667.01, Vendido ,C0160,Persona,Darien,Dorsey,22,18-25,1985,12,27,M,EE.UU.,California,Inversion,3,Yes,Sitio web
+1049,1,2004,11,Apartamento,49,1375.45,467083.31, Vendido ,C0014,Persona,Alessandra,Perry,25,18-25,1979,5,15,F,EE.UU.,California,Hogar,4,No,Agencia
+3011,3,2007,9,Apartamento,11,675.19,203491.85, Vendido ,C0125,Persona,Kaitlin,Owen,26,26-35,1981,12,26,F,EE.UU.,Virginia,Inversion,5,No,Cliente
+3026,3,2007,9,Apartamento,26,670.89,212520.83, Vendido ,C0125,Persona,Kaitlin,Owen,26,26-35,1981,12,26,F,EE.UU.,Virginia,Inversion,5,No,Agencia
+3023,3,2008,1,Apartamento,23,720.81,198591.85, Vendido ,C0166,Persona,Terry,Forbes,26,26-35,1982,5,27,M,EE.UU.,California,Hogar,5,No,Cliente
+1031,1,2006,6,Apartamento,31,782.25,265467.68, Vendido ,C0034,Persona,Kole,Shannon,27,26-35,1979,6,27,M,EE.UU.,Arizona,Hogar,2,Yes,Sitio web
+4023,4,2006,3,Apartamento,23,794.52,235633.26, Vendido ,C0170,Persona,Emmy,Singh,27,26-35,1979,12,3,F,EE.UU.,Virginia,Inversion,3,Yes,Agencia
+1036,1,2004,10,Apartamento,36,1160.36,317473.86, Vendido ,C0009,Persona,Arabella,Ferrell,28,26-35,1976,8,17,F,EE.UU.,Oregon,Hogar,1,No,Agencia
+1046,1,2006,8,Apartamento,46,1942.5,503790.23, Vendido ,C0041,Persona,Christian,Costa,26,26-35,1980,9,14,M,EE.UU.,California,Hogar,5,No,Sitio web
+4035,4,2007,10,Apartamento,35,794.52,217786.38, Vendido ,C0057,Persona,Michelle,Cameron,29,26-35,1978,6,4,F,EE.UU.,Nevada,Hogar,3,Yes,Sitio web
+2036,2,2006,11,Apartamento,36,1109.25,460001.26, Vendido ,C0061,Persona,Enrique,Cardenas,29,26-35,1977,6,10,M,EE.UU.,California,Hogar,2,No,Sitio web
+2056,2,2007,4,Apartamento,56,1400.95,460001.26, Vendido ,C0089,Persona,Amanda,Simon,29,26-35,1978,12,3,F,EE.UU.,California,Hogar,5,No,Agencia
+1047,1,2007,12,Apartamento,47,1479.72,448134.27, Vendido ,C0159,Persona,Kamden,Stewart,29,26-35,1978,9,14,M,EE.UU.,California,Hogar,5,No,Sitio web
+5051,5,2006,3,Apartamento,51,790.54,249591.99, Vendido ,C0171,Persona,Skylar,Buchanan,29,26-35,1977,12,25,M,EE.UU.,Nevada,Hogar,4,Yes,Sitio web
+2007,2,2006,8,Apartamento,7,723.93,196142.19, Vendido ,C0042,Persona,Michael,Juarez,30,26-35,1976,12,25,M,EE.UU.,Colorado,Hogar,4,Yes,Agencia
+3020,3,2007,4,Apartamento,20,781.07,258572.48, Vendido ,C0093,Persona,Antonio,Porter,30,26-35,1977,1,8,M,EE.UU.,Arizona,Hogar,5,No,Cliente
+3029,3,2007,4,Apartamento,29,1127.76,310831.21, Vendido ,C0093,Persona,Antonio,Porter,30,26-35,1977,1,8,M,EE.UU.,Arizona,Hogar,3,No,Cliente
+3015,3,2006,10,Apartamento,15,720.7,207281.59, Vendido ,C0051,Persona,Conner,Huff,31,26-35,1975,3,22,M,EE.UU.,Nevada,Hogar,5,No,Sitio web
+2004,2,2006,12,Apartamento,4,649.69,168834.04, Vendido ,C0064,Persona,Joaquin,Mullins,31,26-35,1975,10,5,M,EE.UU.,California,Inversion,5,No,Agencia
+2006,2,2006,12,Apartamento,6,1307.45,396973.83, Vendido ,C0064,Persona,Joaquin,Mullins,31,26-35,1975,10,5,M,EE.UU.,California,Inversion,5,No,Agencia
+5013,5,2007,9,Apartamento,13,618.38,188743.11, Vendido ,C0128,Persona,Kyla,Walker,31,26-35,1976,2,26,F,EE.UU.,Colorado,Hogar,4,Yes,Agencia
+1026,1,2005,3,Apartamento,26,625.8,179674.08, Vendido ,C0019,Persona,Victor,Jensen,32,26-35,1973,9,1,M,EE.UU.,California,Hogar,4,No,Sitio web
+2054,2,2006,6,Apartamento,54,1203.29,306363.64, Vendido ,C0037,Persona,Tyler,Carr,32,26-35,1974,3,27,M,EE.UU.,California,Hogar,5,Yes,Cliente
+3033,3,2007,9,Apartamento,33,670.89,200300.63, Vendido ,C0127,Persona,Maia,Chandler,32,26-35,1975,8,12,F,EE.UU.,Utah,Hogar,1,Yes,Sitio web
+1025,1,2005,3,Apartamento,25,1434.09,382041.13, Vendido ,C0018,Persona,Rodrigo,Ramirez,33,26-35,1972,3,26,M,EE.UU.,California,Hogar,1,No,Agencia
+3027,3,2006,8,Apartamento,27,781.07,245572.79, Vendido ,C0040,Persona,Gianni,Fritz,33,26-35,1973,9,15,M,EE.UU.,California,Hogar,3,No,Sitio web
+3031,3,2007,3,Apartamento,31,1596.35,407214.29, Vendido ,C0080,Persona,Janelle,Espinoza,33,26-35,1974,12,25,F,EE.UU.,California,Inversion,4,No,Cliente
+2043,2,2007,4,Apartamento,43,1110.32,355073.40, Vendido ,C0083,Persona,Julio,Leonard,33,26-35,1974,7,18,M,EE.UU.,Nevada,Hogar,2,Yes,Sitio web
+3034,3,2007,4,Apartamento,34,781.07,256821.64, Vendido ,C0085,Persona,Melanie,Holland,33,26-35,1974,12,25,F,EE.UU.,California,Inversion,3,No,Cliente
+3016,3,2007,4,Apartamento,16,697.89,226342.80, Vendido ,C0091,Persona,Gordon,Brown,33,26-35,1974,2,10,M,UK,Arizona,Inversion,4,No,Agencia
+1018,1,2004,10,Apartamento,18,625.8,191389.87, Vendido ,C0007,Persona,Jaelyn,Berger,34,26-35,1970,5,5,F,EE.UU.,California,Hogar,3,No,Sitio web
+2050,2,2006,9,Apartamento,50,957.53,297008.97, Vendido ,C0048,Persona,Adriana,Shaffer,34,26-35,1972,7,11,F,EE.UU.,California,Inversion,2,No,Agencia
+2044,2,2007,1,Apartamento,44,722.96,250773.15, Vendido ,C0065,Persona,Mara,Franco,34,26-35,1973,6,7,F,EE.UU.,California,Hogar,5,Yes,Agencia
+3039,3,2007,5,Apartamento,39,923.21,312211.14, Vendido ,C0096,Persona,Kael,Hurley,34,26-35,1973,12,15,M,EE.UU.,Colorado,Hogar,3,No,Sitio web
+3053,3,2007,12,Apartamento,53,670.24,190119.50, Vendido ,C0164,Persona,Belinda,Hogan,34,26-35,1973,8,18,F,EE.UU.,California,Hogar,1,Yes,Agencia
+2041,2,2006,7,Apartamento,41,785.48,225050.52, Vendido ,C0038,Persona,Mohammad,Irwin,35,26-35,1971,12,2,M,EE.UU.,California,Hogar,1,No,Sitio web
+5035,5,2008,5,Apartamento,35,798.28,261742.74, Vendido ,C0087,Persona,Warren,Pugh,35,26-35,1973,7,17,M,EE.UU.,Arizona,Inversion,5,No,Sitio web
+4005,4,2007,11,Apartamento,5,1121.95,344530.89, Vendido ,C0142,Persona,Kassidy,Vega,35,26-35,1972,5,7,F,EE.UU. ,California,Hogar,5,No,Sitio web
+1032,1,2005,1,Apartamento,32,782.25,215410.28, Vendido ,C0015,Persona,Lauryn,Patrick,36,36-45,1969,10,30,F,Belgium,,Hogar,2,No,Agencia
+3046,3,2007,8,Apartamento,46,923.21,252185.99, Vendido ,C0122,Persona,Brock,Fischer,36,36-45,1971,5,29,M,EE.UU.,Kansas,Hogar,3,No,Sitio web
+1041,1,2005,3,Apartamento,41,1434.09,480545.81, Vendido ,C0017,Persona,Memphis,Mcconnell,37,36-45,1968,8,25,M,EE.UU.,California,Hogar,2,Yes,Sitio web
+1012,1,2005,3,Apartamento,12,1160.36,300385.62, Vendido ,C0020,Persona,Grant,Weber,37,36-45,1968,9,8,M,EE.UU.,California,Hogar,5,Yes,Sitio web
+5033,5,2008,5,Apartamento,33,798.28,240539.35, Vendido ,C0086,Persona,Jace,Riggs,37,36-45,1971,8,20,F,EE.UU.,California,Hogar,1,No,Sitio web
+4006,4,2006,7,Apartamento,6,733.19,222138.72, Vendido ,C0150,Persona,Emmett,Estes,37,36-45,1969,6,5,M,EE.UU. ,California,Hogar,3,No,Sitio web
+5040,5,2007,12,Apartamento,40,798.28,228410.05, Vendido ,C0156,Persona,Isis,Rios,37,36-45,1970,4,1,M,EE.UU.,California,Inversion,4,No,Sitio web
+4013,4,2007,1,Apartamento,13,733.19,197053.51, Vendido ,C0169,Persona,Mason,Gilbert,37,36-45,1970,7,31,M,EE.UU.,Colorado,Hogar,2,No,Agencia
+1003,1,2005,6,Oficina,3,717.05,193660.62, Vendido ,C0022,Persona,Zain,Horne,38,36-45,1967,4,13,M,EE.UU.,Arizona,Hogar,1,Yes,Sitio web
+2009,2,2007,3,Apartamento,9,747.5,237060.15, Vendido ,C0072,Persona,Dayton,Hatfield,38,36-45,1969,4,19,M,EE.UU.,Colorado,Inversion,4,Yes,Agencia
+4024,4,2007,11,Apartamento,24,1121.95,372001.70, Vendido ,C0136,Persona,Annabel,Robles,38,36-45,1969,10,14,F,EE.UU.,California,Hogar,5,Yes,Sitio web
+4012,4,2007,11,Apartamento,12,1121.95,290031.26, Vendido ,C0149,Persona,Kayden,Olsen,38,36-45,1969,10,17,F,EE.UU.,California,Hogar,5,No,Sitio web
+1035,1,2004,10,Apartamento,35,827.87,238811.06, Vendido ,C0011,Persona,Davion,Stout,39,36-45,1965,7,20,M,EE.UU.,Nevada,Hogar,1,Yes,Agencia
+2017,2,2007,3,Apartamento,17,747.5,199054.20, Vendido ,C0073,Persona,Kevin,Mata,39,36-45,1968,10,12,M,EE.UU.,Colorado,Inversion,2,No,Agencia
+4051,4,2007,3,Apartamento,51,1608.84,496266.41, Vendido ,C0110,Persona,Kareem,Liu,39,36-45,1968,5,11,F,EE.UU.,California,Hogar,4,Yes,Sitio web
+3014,3,2007,7,Apartamento,14,1132.06,346906.89, Vendido ,C0111,Persona,Grace,Stein,39,36-45,1968,12,20,F,EE.UU.,California,Hogar,3,Yes,Sitio web
+2051,2,2007,9,Apartamento,51,1383.84,376964.62, Vendido ,C0123,Persona,Lydia,Tate,39,36-45,1968,8,14,F,EE.UU.,California,Hogar,3,Yes,Sitio web
+2025,2,2007,2,Apartamento,25,927.83,315733.15, Vendido ,C0070,Persona,Aleksandra,Karenina,40,36-45,1967,6,13,F,Russia,,Hogar,1,No,Agencia
+3047,3,2007,3,Apartamento,47,669.16,188273.73, Vendido ,C0075,Persona,Sincere,Hansen,40,36-45,1967,1,19,F,EE.UU.,California,Inversion,2,Yes,Agencia
+2046,2,2007,3,Apartamento,46,928.16,253831.02, Vendido ,C0076,Persona,Luke,Lynn,40,36-45,1967,2,7,M,EE.UU.,California,Hogar,2,Yes,Agencia
+5016,5,2007,6,Apartamento,16,798.5,278575.87, Vendido ,C0105,Persona,Myla,Ewing,40,36-45,1967,2,3,F,EE.UU.,Oregon,Inversion,2,No,Cliente
+4041,4,2007,10,Apartamento,41,1305.62,402081.80, Vendido ,C0135,Persona,Morgan,Glass,40,36-45,1967,5,12,M,EE.UU.,Utah,Hogar,5,No,Agencia
+4018,4,2007,11,Apartamento,18,1121.95,310832.59, Vendido ,C0153,Persona,Camille,Sharp,40,36-45,1967,10,17,F,EE.UU.,California,Hogar,5,No,Sitio web
+2005,2,2006,9,Apartamento,5,785.48,257183.48, Vendido ,C0047,Persona,Alejandra,Greer,41,36-45,1965,1,11,F,Denmark,,Inversion,1,No,Agencia
+2010,2,2006,11,Apartamento,10,927.08,326885.34, Vendido ,C0060,Persona,Valentina,Simpson,41,36-45,1965,1,24,F,EE.UU.,California,Hogar,4,Yes,Agencia
+2022,2,2007,1,Apartamento,22,1109.25,344568.74, Vendido ,C0066,Persona,Helen,Williamson,41,36-45,1966,2,26,F,EE.UU.,Colorado,Hogar,5,Yes,Agencia
+2047,2,2007,2,Apartamento,47,649.8,214631.68, Vendido ,C0068,Persona,Nicolas,Navarro,41,36-45,1966,6,17,M,EE.UU.,Oregon,Inversion,3,No,Agencia
+2012,2,2007,4,Apartamento,12,785.48,237207.68, Vendido ,C0090,Persona,Case,Sanchez,41,36-45,1966,5,26,F,EE.UU.,California,Hogar,5,No,Sitio web
+3038,3,2007,5,Apartamento,38,1596.35,464549.19, Vendido ,C0095,Persona,Rodrigo,Robinson,41,36-45,1966,8,11,M,EE.UU.,California,Hogar,4,No,Sitio web
+4030,4,2007,11,Apartamento,30,1121.95,310577.04, Vendido ,C0151,Persona,Iris,Larsen,41,36-45,1966,9,14,M,EE.UU.,California,Hogar,4,Yes,Agencia
+3017,3,2007,12,Apartamento,17,743.41,205098.21, Vendido ,C0162,Persona,Araceli,Nelson,41,36-45,1966,9,14,M,Germany,California,Inversion,5,No,Agencia
+1045,1,2004,10,Apartamento,45,756.21,248525.12, Vendido ,C0010,Persona,Trystan,Oconnor,42,36-45,1962,11,26,M,EE.UU.,California,Hogar,1,No,Sitio web
+2040,2,2006,10,Apartamento,40,649.8,224463.87, Vendido ,C0054,Persona,Erik,Mora,42,36-45,1964,12,7,M,EE.UU.,Oregon,Inversion,5,No,Agencia
+2042,2,2006,11,Apartamento,42,785.48,220606.28, Vendido ,C0056,Persona,Emely,Watts,42,36-45,1964,11,30,F,EE.UU.,California,Hogar,4,No,Sitio web
+2048,2,2007,3,Apartamento,48,785.48,220865.00, Vendido ,C0081,Persona,Jordyn,Park,42,36-45,1965,4,4,M,EE.UU.,Nevada,Inversion,3,Yes,Sitio web
+3049,3,2007,4,Apartamento,49,1283.45,338181.18, Vendido ,C0084,Persona,Diego,Mendez,42,36-45,1965,5,12,M,Mexico,,Hogar,3,No,Agencia
+1017,1,2005,2,Apartamento,17,1434.09,432679.91, Vendido ,C0016,Persona,Harley,Lucero,43,36-45,1962,8,10,M,EE.UU.,California,Hogar,1,Yes,Sitio web
+1039,1,2006,6,Apartamento,39,782.25,196220.05, Vendido ,C0035,Persona,Emilie,Morrison,49,46-55,1957,10,29,F,EE.UU.,California,Hogar,3,Yes,Sitio web
+2049,2,2006,11,Apartamento,49,1288.62,323915.81, Vendido ,C0062,Persona,Jaylen,Turner,43,36-45,1963,7,15,F,EE.UU.,California,Hogar,4,No,Agencia
+3054,3,2007,5,Apartamento,54,781.07,200719.02, Vendido ,C0099,Persona,Frank,Meyer,43,36-45,1964,3,16,M,EE.UU.,California,Hogar,2,No,Agencia
+3055,3,2007,5,Apartamento,55,1222.34,380809.52, Vendido ,C0099,Persona,Frank,Meyer,43,36-45,1964,3,16,M,EE.UU.,California,Hogar,3,Yes,Agencia
+3042,3,2007,7,Apartamento,42,781.07,213942.56, Vendido ,C0114,Persona,Jakobe,Bailey,43,36-45,1964,10,6,M,UK,California,Inversion,4,No,Agencia
+1038,1,2004,8,Apartamento,38,743.09,207581.43, Vendido ,C0006,Persona,Laci,Guerra,48,46-55,1956,6,17,F,EE.UU.,California,Hogar,2,Yes,Sitio web
+2020,2,2006,10,Apartamento,20,785.48,241671.52, Vendido ,C0053,Persona,Scarlet,Hendricks,44,36-45,1962,1,20,F,EE.UU.,California,Hogar,5,Yes,Sitio web
+2014,2,2007,2,Apartamento,14,1109.25,336695.25, Vendido ,C0069,Persona,Alonso,Terrell,44,36-45,1963,11,5,M,EE.UU.,California,Inversion,4,No,Sitio web
+3001,3,2007,8,Apartamento,1,579.75,171262.65, Vendido ,C0069,Persona,Alonso,Terrell,44,36-45,1963,11,5,M,EE.UU.,California,Inversion,5,No,Sitio web
+3043,3,2007,11,Apartamento,43,1128.4,299159.14, Vendido ,C0069,Persona,Alonso,Terrell,44,36-45,1963,11,5,M,EE.UU.,California,Hogar,5,No,Sitio web
+2016,2,2007,3,Apartamento,16,701.66,212265.67, Vendido ,C0077,Persona,Hazel,Ayers,44,36-45,1963,2,1,M,EE.UU.,Colorado,Hogar,2,No,Sitio web
+4049,4,2008,1,Apartamento,49,1336.93,388515.14, Vendido ,C0168,Persona,Brisa,Mckee,44,36-45,1964,9,24,F,EE.UU.,California,Hogar,5,No,Cliente
+4022,4,2007,8,Apartamento,22,794.52,263790.81, Vendido ,C0058,Persona,Johanna,Fisher,45,36-45,1962,8,25,F,EE.UU.,California,Hogar,4,Yes,Sitio web
+3059,3,2007,6,Apartamento,59,1171.55,367976.46, Vendido ,C0107,Persona,Curtis,Howard,45,36-45,1962,9,11,M,EE.UU.,California,Hogar,2,No,Agencia
+4034,4,2007,10,Apartamento,34,794.52,243052.59, Vendido ,C0131,Persona,Kamila,Collier,45,36-45,1962,1,21,F,EE.UU.,California,Hogar,1,Yes,Sitio web
+5027,5,2007,11,Apartamento,27,798.28,269075.30, Vendido ,C0144,Persona,Joseph,Reeves,45,36-45,1962,9,23,M,EE.UU.,California,Inversion,5,No,Sitio web
+5028,5,2007,11,Apartamento,28,798.28,223577.32, Vendido ,C0144,Persona,Joseph,Reeves,45,36-45,1962,9,23,M,EE.UU.,California,Inversion,5,No,Sitio web
+2026,2,2006,9,Apartamento,26,649.8,198075.99, Vendido ,C0048,Persona,Adriana,Shaffer,47,46-55,1959,9,28,F,EE.UU.,Utah,Inversion,1,No,Cliente
+3022,3,2007,5,Apartamento,22,1137.44,354553.23, Vendido ,C0098,Persona,Oswaldo,Palmer,47,46-55,1960,6,16,M,EE.UU.,California,Hogar,2,No,Sitio web
+2024,2,2005,6,Apartamento,24,1604.75,456919.46, Vendido ,C0130,Persona,Ezra,Lozano,47,46-55,1958,2,24,M,EE.UU.,California,Hogar,1,No,Sitio web
+3003,3,2007,11,Apartamento,3,675.19,233142.80, Vendido ,C0141,Persona,Melany,Glover,47,46-55,1960,10,1,F,EE.UU.,California,Inversion,1,Yes,Agencia
+2011,2,2007,1,Apartamento,11,649.69,225401.62, Vendido ,C0067,Persona,Jacqueline,Grant,48,46-55,1959,11,13,F,EE.UU.,California,Hogar,4,No,Sitio web
+2028,2,2007,4,Apartamento,28,785.48,195153.16, Vendido ,C0082,Persona,Violet,Nixon,48,46-55,1959,1,1,F,EE.UU.,Oregon,Inversion,5,No,Cliente
+3028,3,2007,7,Apartamento,28,781.07,206631.81, Vendido ,C0113,Persona,Anya,Stephenson,48,46-55,1959,6,11,F,EE.UU.,California,Hogar,4,No,Sitio web
+3036,3,2007,10,Apartamento,36,1127.76,358525.59, Vendido ,C0132,Persona,Kale,Gay,48,46-55,1959,4,7,M,EE.UU.,California,Hogar,4,Yes,Agencia
+4010,4,2007,11,Apartamento,10,794.52,223917.34, Vendido ,C0137,Persona,Russell,Gross,48,46-55,1959,11,25,M,EE.UU.,California,Hogar,5,No,Sitio web
+4011,4,2007,11,Apartamento,11,794.52,201518.89, Vendido ,C0137,Persona,Russell,Gross,48,46-55,1959,11,25,M,EE.UU.,California,Hogar,5,No,Sitio web
+3035,3,2007,12,Apartamento,35,781.07,269278.57, Vendido ,C0155,Persona,Laurel,Benitez,48,46-55,1959,8,6,M,EE.UU.,California,Hogar,4,Yes,Agencia
+3037,3,2007,12,Apartamento,37,720.81,204808.16, Vendido ,C0163,Persona,Aniyah,Ali,48,46-55,1959,11,3,F,EE.UU.,California,Inversion,2,Yes,Sitio web
+2032,2,2006,8,Apartamento,32,927.83,306878.46, Vendido ,C0039,Persona,Derick,Li,49,46-55,1957,3,20,M,EE.UU.,California,Hogar,3,Yes,Agencia
+2018,2,2007,2,Apartamento,18,927.83,275394.25, Vendido ,C0071,Persona,Cole,Taylor,49,46-55,1958,12,6,M,EE.UU.,California,Hogar,3,Yes,Sitio web
+2035,2,2007,5,Apartamento,35,785.48,192092.24, Vendido ,C0101,Persona,Ava,Phelps,49,46-55,1958,4,15,F,EE.UU.,California,Hogar,3,No,Cliente
+5025,5,2008,12,Apartamento,25,618.16,165430.28, Vendido ,C0146,Persona,Nyla,Blake,49,46-55,1959,6,5,F,EE.UU.,California,Inversion,5,Yes,Agencia
+2029,2,2006,9,Apartamento,29,1109.25,310223.29, Vendido ,C0051,Persona,Conner,Huff,50,46-55,1956,3,13,M,EE.UU.,California,Hogar,5,No,Sitio web
+3007,3,2006,10,Apartamento,7,720.7,231552.33, Vendido ,C0052,Persona,Tristian,Fuller,50,46-55,1956,3,13,M,EE.UU.,California,Inversion,5,No,Agencia
+3030,3,2006,10,Apartamento,30,720.81,215774.28, Vendido ,C0052,Persona,Tristian,Fuller,50,46-55,1956,3,13,M,EE.UU.,California,Hogar,5,No,Agencia
+2003,2,2006,12,Apartamento,3,927.08,289727.99, Vendido ,C0063,Persona,Piotr,Aleksandrov,51,46-55,1955,12,2,M,Russia,,Inversion,3,No,Agencia
+5039,5,2008,5,Apartamento,39,798.28,195874.94, Vendido ,C0088,Persona,Yurem,Wright,51,46-55,1957,3,6,M,EE.UU.,California,Hogar,3,Yes,Sitio web
+5030,5,2010,5,Apartamento,30,1057.92,357538.20, Vendido ,C0094,Persona,Luis,Crane,51,46-55,1959,4,20,M,EE.UU.,Nevada,Hogar,3,Yes,Sitio web
+3041,3,2008,1,Apartamento,41,781.07,239248.75, Vendido ,C0165,Persona,Anahi,Curry,51,46-55,1957,9,9,M,EE.UU.,California,Hogar,5,Yes,Cliente
+2057,2,2006,9,Apartamento,57,1396.86,382277.15, Vendido ,C0044,Persona,Ramiro,Oneill,52,46-55,1954,9,29,M,EE.UU. ,California,Hogar,4,No,Agencia
+4028,4,2007,2,Apartamento,28,794.52,248422.66, Vendido ,C0157,Persona,Erika,Steward,52,46-55,1955,8,7,F,EE.UU.,California,Inversion,4,No,Sitio web
+3032,3,2007,8,Apartamento,32,923.21,242740.66, Vendido ,C0118,Persona,Dangelo,Shea,53,46-55,1954,2,27,M,Belgium,Arizona,Inversion,4,No,Sitio web
+3013,3,2007,8,Apartamento,13,781.07,253025.78, Vendido ,C0119,Persona,Miguel,Walter,53,46-55,1954,1,7,M,EE.UU.,Arizona,Hogar,4,No,Agencia
+1040,1,2006,4,Apartamento,40,782.25,234172.39, Vendido ,C0033,Persona,Alanna,Hess,54,46-55,1952,6,19,F,EE.UU.,Nevada,Hogar,3,No,Sitio web
+4031,4,2007,6,Apartamento,31,733.19,200678.75, Vendido ,C0100,Persona,Simon,Bennett,54,46-55,1953,6,9,M,EE.UU.,Colorado,Hogar,4,No,Sitio web
+4019,4,2007,12,Apartamento,19,733.19,226578.51, Vendido ,C0133,Persona,Ivan,Bright,54,46-55,1953,9,15,M,EE.UU.,California,Hogar,4,No,Sitio web
+4029,4,2007,11,Apartamento,29,794.52,200148.89, Vendido ,C0175,Persona,Madeline,Michael,54,46-55,1953,7,30,F,EE.UU.,California,Hogar,4,Yes,Sitio web
+1021,1,2004,10,Apartamento,21,756.21,218585.92, Vendido ,C0008,Persona,Arthur,Bray,55,46-55,1949,7,14,M,EE.UU.,Utah,Inversion,4,No,Agencia
+1006,1,2005,8,Apartamento,6,736.63,198841.70, Vendido ,C0023,Persona,Bennett,Chen,55,46-55,1950,7,18,M,EE.UU.,Nevada,Hogar,2,No,Sitio web
+2034,2,2007,7,Apartamento,34,785.48,252927.84, Vendido ,C0108,Persona,Van,Charles,55,46-55,1952,5,15,M,EE.UU.,Colorado,Hogar,2,Yes,Cliente
+3021,3,2007,7,Apartamento,21,781.07,225290.22, Vendido ,C0109,Persona,Rachel,Cross,55,46-55,1952,6,18,F,EE.UU.,California,Hogar,3,No,Sitio web
+5021,5,2008,12,Apartamento,21,798.28,234750.59, Vendido ,C0145,Persona,Augustus,Hinton,55,46-55,1953,2,3,M,EE.UU.,Nevada,Inversion,2,No,Sitio web
+5022,5,2008,12,Apartamento,22,798.28,287466.41, Vendido ,C0145,Persona,Augustus,Hinton,55,46-55,1953,2,3,M,EE.UU.,Nevada,Inversion,2,No,Sitio web
+1044,1,2004,6,Apartamento,44,827.87,229464.71, Vendido ,C0003,Persona,Avah,Huang,56,56-65,1948,4,23,F,EE.UU.,California,Hogar,5,No,Sitio web
+1043,1,2004,6,Apartamento,43,1160.36,377313.56, Vendido ,C0004,Persona,Nora,Lynch,56,56-65,1948,4,23,F,EE.UU.,California,Hogar,5,No,Sitio web
+1027,1,2005,8,Apartamento,27,827.87,276759.18, Vendido ,C0024,Persona,Irvin,Ellis,56,56-65,1949,11,14,M,EE.UU.,California,Hogar,3,No,Agencia
+2023,2,2005,12,Apartamento,23,723.83,219373.41, Vendido ,C0030,Persona,Aiyana,Christensen,56,56-65,1949,1,16,F,EE.UU.,California,Inversion,3,No,Sitio web
+5046,5,2007,11,Apartamento,46,798.28,230216.22, Vendido ,C0147,Persona,Parker,Poole,56,56-65,1951,11,10,M,EE.UU.,California,Hogar,5,No,Sitio web
+1002,1,2004,3,Oficina,2,1238.58,410932.67, Vendido ,C0002,Persona,Jack,Anderson,57,56-65,1947,2,13,M,EE.UU.,California,Inversion,5,Yes,Sitio web
+2030,2,2005,12,Apartamento,30,723.83,214341.34, Vendido ,C0031,Persona,Cedric,Goodwin,57,56-65,1948,2,20,M,EE.UU.,Utah,Hogar,4,No,Cliente
+3050,3,2006,11,Apartamento,50,977.87,248274.31, Vendido ,C0059,Persona,Elena,Petrova,57,56-65,1949,6,22,F,Russia,,Hogar,3,Yes,Agencia
+5050,5,2007,11,Apartamento,50,1093,390494.27, Vendido ,C0140,Persona,Aniya,Miller,57,56-65,1950,15,2,F,EE.UU.,Nevada,Hogar,3,No,Sitio web
+2039,2,2006,8,Apartamento,39,927.83,293876.27, Vendido ,C0043,Persona,Kayley,Nielsen,59,56-65,1947,4,27,F,EE.UU.,Arizona,Hogar,4,Yes,Sitio web
+2008,2,2007,3,Apartamento,8,701.66,204286.67, Vendido ,C0078,Persona,Zaiden,Merritt,59,56-65,1948,2,23,M,EE.UU.,Wyoming,Hogar,3,No,Agencia
+3019,3,2007,9,Apartamento,19,680.57,230154.53, Vendido ,C0124,Persona,Sonia,Choi,59,56-65,1948,11,9,F,EE.UU.,Oregon,Inversion,5,No,Agencia
+2015,2,2006,9,Apartamento,15,723.93,228170.03, Vendido ,C0049,Persona,Trey,Strong,48,46-55,1958,12,20,M,EE.UU.,California,Hogar,4,No,Agencia
+2033,2,2006,9,Apartamento,33,649.8,205085.40, Vendido ,C0049,Persona,Trey,Strong,48,46-55,1958,12,20,M,EE.UU.,California,Hogar,3,No,Agencia
+2019,2,2007,3,Apartamento,19,649.8,177555.06, Vendido ,C0079,Persona,Xavier,Faulkner,60,56-65,1947,5,24,M,Canada,,Inversion,5,No,Sitio web
+2021,2,2007,4,Apartamento,21,785.48,217748.48, Vendido ,C0079,Persona,Xavier,Faulkner,60,56-65,1947,5,24,M,Canada,,Inversion,5,No,Sitio web
+2027,2,2007,4,Apartamento,27,785.48,247739.44, Vendido ,C0079,Persona,Xavier,Faulkner,60,56-65,1947,5,24,M,Canada,,Inversion,5,No,Sitio web
+2052,2,2007,3,Apartamento,52,1615.29,484458.03, Vendido ,C0079,Persona,Xavier,Faulkner,60,56-65,1947,5,24,M,Canada,,Inversion,5,No,Sitio web
+3006,3,2007,2,Apartamento,6,1132.06,356506.37, Vendido ,C0079,Persona,Xavier,Faulkner,60,56-65,1947,5,24,M,Canada,,Inversion,5,No,Sitio web
+3044,3,2007,3,Apartamento,44,720.38,197869.36, Vendido ,C0079,Persona,Xavier,Faulkner,60,56-65,1947,5,24,M,Canada,,Inversion,5,No,Sitio web
+4025,4,2007,12,Apartamento,25,733.19,236608.95, Vendido ,C0079,Persona,Xavier,Faulkner,60,56-65,1947,5,24,M,Canada,,Inversion,5,No,Sitio web
+1015,1,2004,11,Apartamento,15,782.25,208930.81, Vendido ,C0013,Persona,Franklin,Mack,61,56-65,1943,6,18,M,EE.UU.,Virginia,Hogar,5,Yes,Sitio web
+5041,5,2007,11,Apartamento,41,798.28,263123.42, Vendido ,C0139,Persona,Logan,Simmons,61,56-65,1946,9,14,M,EE.UU.,California,Inversion,4,No,Agencia
+5036,5,2007,11,Apartamento,36,1057.92,286433.57, Vendido ,C0154,Persona,Sidney,Cline,64,56-65,1943,7,24,F,EE.UU.,California,Hogar,4,Yes,Sitio web
+2037,2,2006,9,Apartamento,37,723.83,229581.78, Vendido ,C0045,Persona,Matilda,Madden,65,56-65,1941,3,3,F,EE.UU.,Colorado,Hogar,3,No,Agencia
+5034,5,2007,10,Apartamento,34,798.28,252053.03, Vendido ,C0134,Persona,Yesenia,Marquez,65,56-65,1942,7,23,F,EE.UU.,Arizona,Hogar,4,No,Sitio web
+4016,4,2007,11,Apartamento,16,794.52,244820.67, Vendido ,C0138,Persona,Colin,Campos,65,56-65,1942,4,14,M,EE.UU.,California,Hogar,3,No,Sitio web
+4040,4,2007,12,Apartamento,40,794.52,241620.48, Vendido ,C0158,Persona,Erika,Gallagher,65,56-65,1942,7,19,F,EE.UU.,California,Hogar,1,Yes,Sitio web
+1024,1,2006,6,Apartamento,24,782.25,235762.34, Vendido ,C0036,Persona,Jair,Johns,66,65+,1940,3,5,M,EE.UU.,California,Hogar,5,No,Sitio web
+2013,2,2007,3,Apartamento,13,785.48,236639.56, Vendido ,C0074,Persona,Jaylynn,Hickman,66,65+,1941,8,19,F,EE.UU.,California,Hogar,5,No,Cliente
+3010,3,2007,8,Apartamento,10,923.21,294807.65, Vendido ,C0120,Persona,Jack,Hanson,66,65+,1941,12,1,M,EE.UU.,California,Inversion,4,No,Sitio web
+3018,3,2007,8,Apartamento,18,923.21,293828.69, Vendido ,C0120,Persona,Jack,Hanson,66,65+,1941,12,1,M,EE.UU.,California,Inversion,5,No,Sitio web
+1033,1,2004,8,Apartamento,33,1434.09,412856.56, Vendido ,C0005,Persona,Rodolfo,Gibson,67,65+,1937,1,20,M,EE.UU.,Nevada,Hogar,2,Yes,Sitio web
+1016,1,2006,2,Apartamento,16,782.25,224076.84, Vendido ,C0032,Persona,Olivia,Oconnell,67,65+,1939,9,3,F,EE.UU.,California,Inversion,5,No,Sitio web
+3005,3,2006,3,Apartamento,5,781.07,258015.61, Vendido ,C0126,Persona,Crystal,Wyatt,67,65+,1939,6,30,F,EE.UU.,Oregon,Inversion,3,Yes,Sitio web
+5019,5,2007,6,Apartamento,19,618.38,153466.71, Vendido ,C0106,Persona,Ruben,Melton,68,65+,1939,3,5,M,EE.UU.,Utah,Inversion,2,No,Agencia
+3002,3,2007,8,Apartamento,2,923.21,261871.70, Vendido ,C0115,Persona,Issac,Edwards,69,65+,1938,10,29,M,EE.UU.,California,Hogar,5,No,Sitio web
+3004,3,2007,8,Apartamento,4,781.07,210038.70, Vendido ,C0115,Persona,Issac,Edwards,69,65+,1938,10,29,M,EE.UU.,California,Hogar,5,No,Sitio web
+3012,3,2007,10,Apartamento,12,781.07,210824.06, Vendido ,C0129,Persona,Jesus,Obrien,69,65+,1938,6,9,M,EE.UU.,Oregon,Inversion,3,No,Sitio web
+3048,3,2007,10,Apartamento,48,781.07,249075.66, Vendido ,C0129,Persona,Jesus,Obrien,69,65+,1938,6,9,M,EE.UU.,Oregon,Inversion,3,No,Sitio web
+3008,3,2007,6,Apartamento,8,697.89,219865.76, Vendido ,C0103,Persona,Jamal,Mueller,71,65+,1936,8,13,M,EE.UU.,Oregon,Inversion,2,No,Sitio web
+3040,3,2007,6,Apartamento,40,670.89,204292.49, Vendido ,C0103,Persona,Jamal,Mueller,71,65+,1936,8,13,M,EE.UU.,Oregon,Inversion,2,No,Sitio web
+1023,1,2005,4,Apartamento,23,782.25,261579.89, Vendido ,C0021,Persona,Kaylin,Villarreal,73,65+,1932,6,13,F,Russia,,Inversion,3,No,Sitio web
+3009,3,2006,5,Apartamento,9,743.41,222867.42, Vendido ,C0148,Persona,Myah,Roman,73,65+,1933,5,5,F,EE.UU.,California,Inversion,5,Yes,Agencia
+3052,3,2006,3,Apartamento,52,923.21,291494.36, Vendido ,C0172,Persona,Henry,Kennedy,73,65+,1933,6,8,M,EE.UU.,California,Hogar,4,Yes,Agencia
+3025,3,2007,6,Apartamento,25,923.21,296483.14, Vendido ,C0104,Persona,Diana,Hunt,76,65+,1931,2,13,F,EE.UU.,Arizona,Hogar,3,No,Sitio web
+5052,5,,,Apartamento,52,1769.48,532877.38,,,,,, ,,,,,,,,,,,
+1005,1,2004,3,Oficina,5,410.71,117564.07, Vendido ,C0001,Empresa,Kamd,Co,N/A,N/A,N/A,,,N/A,EE.UU.,California,Inversion,5,No,Agencia
+1009,1,2004,11,Oficina,9,1200.82,317196.40, Vendido ,C0012,Empresa,Bridger CAL,Co,N/A,N/A,N/A,,,N/A,EE.UU.,Nevada,Inversion,5,No,Sitio web
+1009,1,2004,11,Oficina,10,800.96,264142.16, Vendido ,C0012,Empresa,Bridger CAL,Co,N/A,N/A,N/A,,,N/A,EE.UU.,Nevada,Inversion,4,No,Sitio web
+1011,1,2005,9,Oficina,11,827.87,222947.21, Vendido ,C0025,Empresa,Abdiel,Co,N/A,N/A,N/A,,,N/A,EE.UU.,Nevada,Inversion,5,Yes,Sitio web
+1007,1,2005,12,Apartamento,7,775.69,250312.53, Vendido ,C0029,Empresa,Kenyon,Co,N/A,N/A,N/A,,,N/A,EE.UU.,Nevada,Inversion,1,Yes,Sitio web
+1008,1,2005,12,Oficina,8,775.69,246050.40, Vendido ,C0029,Empresa,Kenyon,Co,N/A,N/A,N/A,,,N/A,EE.UU.,California,Inversion,1,Yes,Sitio web
+2038,2,2006,10,Apartamento,38,1604.75,529317.28, Vendido ,C0055,Empresa,Kylax,Co,N/A,N/A,N/A,,,N/A,EE.UU.,California,Inversion,5,No,Sitio web
+2001,2,2004,3,Apartamento,1,587.28,169158.29, Vendido ,C0121,Empresa,Esther,Co,N/A,N/A,N/A,,,N/A,EE.UU.,California,Hogar,3,Yes,Sitio web
+1013,1,2005,7,Apartamento,13,756.21,206958.71, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
+1014,1,2005,7,Apartamento,14,743.09,206445.42, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
+1019,1,2005,7,Apartamento,19,827.87,239341.58, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
+1020,1,2005,7,Apartamento,20,1160.36,398903.42, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
+1022,1,2005,7,Apartamento,22,743.09,210745.17, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
+1028,1,2005,7,Apartamento,28,1160.36,331154.88, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
+1034,1,2005,7,Apartamento,34,625.8,204434.68, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
+1037,1,2005,7,Apartamento,37,756.21,189194.31, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
+1042,1,2005,7,Apartamento,42,625.8,204027.09, Vendido ,C0174,Empresa,Marleez,Co,N/A,N/A,N/A,,,N/A,EE.UU. ,California,Inversion,5,No,Sitio web
