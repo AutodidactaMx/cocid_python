@@ -5,9 +5,10 @@ obtendremos una interpretación errónea de los datos.
 '''
 '''
 Vemos datos segadas debido que las personas que solo muestra a las personas 
-que firman el contrato  el cualr epresenta a una familia, pero vemos un dato 
+que firman el contrato el cual representa a una familia, pero vemos un dato 
 interesante las que hay un porcentaje representado por las empresas
 '''
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from pandastable import Table
@@ -48,3 +49,4 @@ class DataFrameTable(tk.Frame):
         plt.show()
 
 table = DataFrameTable(df_genero)
+table.display_table()

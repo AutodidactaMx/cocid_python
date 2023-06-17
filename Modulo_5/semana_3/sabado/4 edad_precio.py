@@ -4,13 +4,18 @@ sólo para individuos y no para empresas.
 Las filas que incluyen empresas (no tienen un valor de edad) son automáticamente 
 ignoradas en todas las medidas
 '''
+'''
+sidetable es una biblioteca de Python que proporciona funcionalidades adicionales 
+para el análisis exploratorio de datos (EDA, por sus siglas en inglés) y la resumización 
+de datos. Amplía las capacidades de los DataFrames de pandas al ofrecer métodos fáciles 
+de usar para generar tablas de resumen perspicaces.
+'''
 from re import sub
 from decimal import Decimal
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import sidetable 
-from IPython.display import display
 import tkinter as tk
 from pandastable import Table, TableModel
 
@@ -38,7 +43,6 @@ en este caso es edad
 df_edad = df[['edad_compra','Precio']]
 df_edad['edad_compra_median'] = np.median(df_edad[['edad_compra']])
 df_edad['Precio_median'] = np.median(df_edad[['Precio']])
-display(df_edad[['edad_compra','Precio']].cov())
 
 '''
 Cuando entre las dos variables hay un relacion directa, la conrianza da un valor positivo

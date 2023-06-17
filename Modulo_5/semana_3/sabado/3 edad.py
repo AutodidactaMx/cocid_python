@@ -7,7 +7,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import sidetable 
-from IPython.display import display
 import tkinter as tk
 from pandastable import Table, TableModel
 
@@ -45,6 +44,12 @@ como medidas de tendencia centra y de dispersion
 El sesgo es un peso desproporcionado a favor o en contra de una cosa,
 persona o grupo en comparación con otra, generalmente de una manera 
 que se considera injusta. Los sesgos se pueden aprender observando contextos culturales
+Calculo moda : mod
+Calculo sesgo : pd.DataFrame.skew
+Calculo varianza : np.var
+Calculo Desviazion estandar : np.std
+Calculo Promedio : np.mean
+Calculo Mediana : np.median
 '''
 def mod(x):
     return x.value_counts().index[0]
@@ -67,23 +72,24 @@ Graficamos la los intervalos de edad y un histograma para verificar el sesgo, de
 fig, axes = plt.subplots(nrows=1, ncols=2)
 
 df_edad['edad_compra'].plot.hist(bins=6,edgecolor='black', linewidth=1.2,ax=axes[0])
-resume_compra.plot.bar(x='edad_compra', y='count', figsize=(10, 5),ax=axes[1])
+resume_compra.plot.bar(x='edad_compra', y='count', figsize=(20, 3),ax=axes[1])
 print(df_edad[['edad_compra',"edad_rango"]])
 
 class DataFrameTable(tk.Frame):
     def __init__(self, df=pd.DataFrame()):
         super().__init__()        
-        self.pack(fill=tk.BOTH, expand=True)
+        self.pack(fill=tk.X, expand=False)
         self.table = Table(
             self, dataframe=df,
             showtoolbar=False,
             showstatusbar=True,
-            editable=False)      
-        self.table.show()          
-
+            editable=False)
+        self.table.show()  
 
 table = DataFrameTable(df_edad)
 table = DataFrameTable(df_std)
+table = DataFrameTable(resume)
+
 plt.show()
 
 
