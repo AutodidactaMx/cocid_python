@@ -1,8 +1,13 @@
+'''
+Aplica la función logaritmo a los valores de las variables. 
+Es útil cuando los datos tienen una distribución sesgada o tienen una amplia gama de valores.
+'''
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('cars.csv')
+df = pd.read_csv('./data/cars.csv')
 p = 10000
 scaled = df['price_usd'].apply(lambda x: np.tanh(x/p))
 
